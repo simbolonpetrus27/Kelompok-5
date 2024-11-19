@@ -17,11 +17,12 @@ function Navbar() {
       </div>
       <div className="navbar-menu">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/kilat-biologi">Kilat Biologi</Link>
         {isAuthenticated ? (
           <>
-            <Link to="/dashboard">Dashboard</Link>
-            <button onClick={handleLogout}>Logout</button>
+            <button className="logout-button" onClick={handleLogout}>
+              Logout
+            </button>
           </>
         ) : (
           <>

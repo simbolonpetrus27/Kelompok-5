@@ -1,0 +1,100 @@
+/* CSS untuk Register */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    position: relative;
+    padding-top: 50px;
+  }
+  
+  .register-box {
+    background: url('https://i.pinimg.com/736x/a1/5d/b8/a15db867798f21e6ffc14abbfdf20141.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 60px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 80%; 
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+    padding:1.5rem 2.5rem; ;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #2a5298;
+  }
+  
+  .subtitle {
+    margin-bottom: 2rem;
+    color: #dbd6d6;
+    font-size: 0.9rem;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color:white;
+    font-size: 0.9rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: #2a5298;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    background: linear-gradient(to right, #1e90ff, #3498db);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #3498db, #2980b9);
+  }
+  
+  .register-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  .register-link a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .register-link a:hover {
+    text-decoration: underline;
+  }
+  
