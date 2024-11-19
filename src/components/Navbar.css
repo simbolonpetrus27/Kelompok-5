@@ -1,0 +1,43 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  position: fixed; /* Navbar tetap berada di atas */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Z-index lebih tinggi dari dashboard */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar .navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-menu button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.navbar .navbar-menu button:hover {
+  background-color: #cc0000;
+}
