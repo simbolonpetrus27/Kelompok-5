@@ -6,9 +6,9 @@ function Home() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn'); // Check login status
+    const isLoggedIn = localStorage.getItem('isLoggedIn'); 
     if (!isLoggedIn) {
-      navigate('/'); // Redirect to login if not logged in
+      navigate('/');
     }
   }, [navigate]);
 

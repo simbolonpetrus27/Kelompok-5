@@ -1,4 +1,4 @@
-/* Navbar Styles */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,11 +6,11 @@
   background-color: black;
   padding: 10px 20px;
   color: white;
-  position: fixed; /* Navbar tetap berada di atas */
+  position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* Z-index lebih tinggi dari dashboard */
+  z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
