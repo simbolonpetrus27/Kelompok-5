@@ -1,89 +1,117 @@
 .section-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .section-header h2 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    position: relative;
-  }
-  
-  .section-header h2::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    background: #2575fc;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    border-radius: 2px;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem; 
 }
-.biologi-destinations-section, .biologi-featured-section {
-  padding: 4rem 0;
+.section-header h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: #2575fc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.biologi-biology-section, .biologi-featured-section {
+  padding: 3rem 0;
   background: #f9f9f9;
 }
 
-.destinations-grid, .featured-grid {
+/* Grid dengan 4 kartu per baris */
+.biology-grid, .featured-grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; /* Jarak antar kartu */
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  justify-content: center;
 }
 
-.biologi-destination-card, .biologi-featured-card {
+/* Responsif untuk layar lebih kecil */
+@media (max-width: 1024px) {
+  .biology-grid, .featured-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .biology-grid, .featured-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  .biology-grid, .featured-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 kolom untuk layar sangat kecil */
+  }
+}
+
+/* Kartu */
+.biologi-biology-card, .biologi-featured-card {
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  width: 100%; /* Pastikan ukuran kartu selalu sama */
+}
+
+.biologi-biology-card:hover, .biologi-featured-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
   position: relative;
-  height: 300px; 
+  height: 180px;
   overflow: hidden;
 }
 
 .card-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   transition: transform 0.3s ease;
 }
 
 .card-image:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.1);
 }
-
 
 .card-category {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(255, 255, 255, 0.9);
+  top: 8px;
+  left: 8px;
+  background: rgba(255, 255, 255, 0.85);
   color: #34495e;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   font-weight: bold;
-  font-size: 0.8rem;
-  border-radius: 20px;
+  font-size: 0.7rem;
+  border-radius: 15px;
 }
 
-
 .card-content {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
 .card-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
   color: #2c3e50;
 }
 
 .card-content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
   color: #555;
 }
@@ -92,32 +120,14 @@
   background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
   color: white;
   border: none;
-  padding: 0.8rem 2rem;
-  border-radius: 50px;
-  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .detail-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(38, 117, 252, 0.5);
-}
-
-
-.biologi-featured-card .featured-image {
-  position: relative;
-  height: 300px; 
-  overflow: hidden;
-}
-
-.biologi-featured-card .featured-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-}
-
-.biologi-featured-card:hover .featured-image img {
-  transform: scale(1.1); 
-  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(38, 117, 252, 0.4);
 }
