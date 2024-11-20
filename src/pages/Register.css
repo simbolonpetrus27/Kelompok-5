@@ -92,7 +92,7 @@ button:hover {
 }
 
 .register-link {
-  color: #4aaeff;
+  color: #ff0000;
   font-weight: bold;
 }
 
@@ -104,6 +104,6 @@ button:hover {
 
 .register-link a:hover {
   text-decoration: underline;
-  color: green;
+  color: #1e00ff;
 }
 
