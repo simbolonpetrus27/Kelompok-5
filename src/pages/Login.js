@@ -20,7 +20,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const savedUser = JSON.parse(localStorage.getItem('user'));
+    const savedUser = JSON.parse(localStorage.getItem('user')); // Ambil data pengguna dari localStorage
 
     if (
       savedUser &&
@@ -28,7 +28,8 @@ function Login() {
       formData.password === savedUser.password
     ) {
       alert('Login successful!');
-      navigate('/dashboard'); 
+      localStorage.setItem('isLoggedIn', 'true'); // Tandai bahwa pengguna telah login
+      navigate('/Home'); // Arahkan ke halaman home
     } else {
       setError('Invalid email or password');
     }
@@ -37,8 +38,9 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2>Login</h2>
-        <p className="subtitle">Welcome back! Login to continue</p>
+      <div className="subtitle-container">
+  <h1 className="subtitle">LOGIN</h1>
+</div>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -64,9 +66,11 @@ function Login() {
             />
           </div>
           <button type="submit" className="login-button">Login</button>
-        </form>
-        <div className="login-link">
-          <p>Don't have an account? <a href="/register">Register Here</a></p>
+      </form>
+      <div className="login-link-container">
+          <p className="login-link">
+            Don't have an account? <a href="/register">Register Here</a>
+            </p>
         </div>
       </div>
     </div>

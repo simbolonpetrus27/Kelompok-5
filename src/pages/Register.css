@@ -1,100 +1,109 @@
 
 .register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: white;
-    position: relative;
-    padding-top: 50px;
-  }
-  
-  .register-box {
-    background: url('https://i.pinimg.com/736x/a1/5d/b8/a15db867798f21e6ffc14abbfdf20141.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 60px 20px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    width: 80%; 
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin-top: 20px;
-    padding:1.5rem 2.5rem; ;
-  }
-  
-  h2 {
-    margin-bottom: 1rem;
-    color: #2a5298;
-  }
-  
-  .subtitle {
-    margin-bottom: 2rem;
-    color: #dbd6d6;
-    font-size: 0.9rem;
-  }
-  
-  .error-message {
-    color: #e74c3c;
-    margin-bottom: 1rem;
-    font-size: 0.85rem;
-  }
-  
-  .form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color:white;
-    font-size: 0.9rem;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 0.8rem;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 0.9rem;
-    outline: none;
-    transition: border-color 0.3s;
-  }
-  
-  .form-group input:focus {
-    border-color: #2a5298;
-  }
-  
-  button {
-    width: 100%;
-    padding: 0.8rem;
-    background: linear-gradient(to right, #1e90ff, #3498db);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  button:hover {
-    background: linear-gradient(to right, #3498db, #2980b9);
-  }
-  
-  .register-link {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: white;
-  }
-  
-  .register-link a {
-    color: #2a5298;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .register-link a:hover {
-    text-decoration: underline;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+  position: relative;
+  padding-top: 50px;
+  background-color: #2a6227;
+}
+
+.register-box {
+  background: url('https://i.pinimg.com/736x/0c/db/67/0cdb673fa6cf15a391f5a5bb67f6b116.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%; 
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5); 
+  margin-top: 10px;
+  padding:1.5rem 2.5rem; ;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.subtitle-container {
+  text-align: center; 
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.subtitle {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: white;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #ded4d4;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background: #0f1011;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2a6227;
+}
+
+.register-link-container {
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+}
+
+.register-link {
+  color: green;
+  font-weight: bold;
+}
+
+.register-link a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: green;
+}
+

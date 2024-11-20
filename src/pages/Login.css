@@ -4,71 +4,102 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: white
-}
-
-.login-box {
-    background: url('https://i.pinimg.com/736x/a1/5d/b8/a15db867798f21e6ffc14abbfdf20141.jpg') no-repeat center center/cover; /* Background image inside login box */
+    background-color: #2a6227; 
+  }
+  
+  .login-box {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8); 
-}
-
-h2 {
+    background: url('https://i.pinimg.com/736x/0c/db/67/0cdb673fa6cf15a391f5a5bb67f6b116.jpg') no-repeat center center/cover; /* Background image inside login box */
+    position: relative;
+  }
+  
+  h1 {
     margin-bottom: 1rem;
-    color: #2a5298;
-}
-
-.subtitle {
+    color: #2a5298; 
+  }
+  
+  .subtitle-container {
+    text-align: center; 
     margin-bottom: 2rem;
-    color: #666;
-}
-
-.error-message {
+    padding: 1rem;
+   border-radius: 10px; 
+  }
+  
+  .subtitle {
+    margin: 0;
+    color: white; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+  }
+  
+  
+  .error-message {
     color: #e74c3c;
     margin-bottom: 1rem;
-}
-
-.form-group {
+  }
+  
+  .form-group {
     margin-bottom: 1.5rem;
     text-align: left;
-}
-
-.form-group input {
+    width: 100%;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    color:white;
+  }
+  
+  .form-group input {
     width: 100%;
     padding: 0.8rem;
     border-radius: 5px;
     border: 1px solid #ddd;
-}
-
-button {
+    background-color: #ded4d4;
+  }
+  
+  button {
     width: 100%;
     padding: 0.8rem;
-    background: #3498db;
+    background: #0f1011;
     border: none;
     border-radius: 5px;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
-}
-
-button:hover {
-    background: #2980b9;
-}
-
-.login-link {
-    margin-top: 1rem;
-    color: #ddd;
-}
-
-.login-link a {
-    color: #2a5298;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2a6227;
+  }
+  
+  .login-link-container {
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+  }
+  
+  
+  .login-link {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .login-link a {
+    color: black;
     text-decoration: none;
-}
-
-.login-link a:hover {
+    font-weight: bold;
+  }
+  
+  .login-link a:hover {
     text-decoration: underline;
-}
+    color: green;
+  }
+  

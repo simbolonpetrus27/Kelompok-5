@@ -42,8 +42,7 @@ function Register() {
   return (
     <div className="register-container">
       <div className="register-box">
-        <h2>Create Account</h2>
-        <p className="subtitle">Join us and explore your account today</p>
+        <h1>REGISTER</h1>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -92,8 +91,8 @@ function Register() {
           </div>
           <button type="submit" className="register-button">Register</button>
         </form>
-        <div className="register-link">
-          <p>Already have an account? <a href="/login">Login Here</a></p>
+        <div className="register-link-container">
+          <p className="register-link">Already have an account? <a href="/login">Login Here</a></p>
         </div>
       </div>
     </div>
