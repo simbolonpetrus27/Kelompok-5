@@ -3,14 +3,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: #0e8e00;
   padding: 10px 20px;
   color: white;
   position: fixed; 
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,10 +18,14 @@
   color: white;
   text-decoration: none;
   margin-right: 15px;
+  padding: 5px 10px; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 .navbar a:hover {
   text-decoration: underline;
+  background-color: #444; 
+  color: #ff4d4d; 
 }
 
 .navbar .navbar-menu {

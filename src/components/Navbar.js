@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">Biology Libretexts</Link>
+        <Link to="/">BIONIK</Link>
       </div>
       <div className="navbar-menu">
         <Link to="/home">Home</Link>
@@ -27,7 +27,6 @@ function Navbar() {
         ) : (
           <>
             <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
           </>
         )}
       </div>
