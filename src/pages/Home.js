@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     const isLoggedIn = localStorage.getItem('isLoggedIn'); 
     if (!isLoggedIn) {
-      navigate('/home');
+      navigate('/');
     }
   }, [navigate]);
 
@@ -21,7 +21,7 @@ function Home() {
       <div className="hero-section">
         <div className="hero-content">
           <h1>BIONIK</h1>
-          <p>Eksplorasi Sains Tanpa Batas</p>
+          <p>Biologi Online Kelas XI</p>
           <div className="search-box">
             <button onClick={handleExploreClick}>Explore Materi</button>
           </div>
