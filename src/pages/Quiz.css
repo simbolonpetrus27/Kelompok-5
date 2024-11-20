@@ -1,0 +1,148 @@
+
+  /* Cards and Grids */
+  .destinations-grid, .featured-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 0 2rem;
+  }
+  
+  .destination-card, .featured-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .destination-card:hover, .featured-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Card Image */
+  .card-image, .featured-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .card-image img, .featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image img:hover, .featured-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-category, .featured-rating {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    color: #34495e;
+    padding: rem 1rem;
+    font-weight: bold;
+    font-size: 0.7rem;
+    border-radius: 20px;
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  /* Card Content */
+  .card-content, .featured-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .card-content h3, .featured-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+  }
+  
+  .detail-btn, .explore-btn {
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .detail-btn:hover, .explore-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(38, 117, 252, 0.5);
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .destination-card, .featured-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.5s ease;
+  }
+  
+  .destination-card.show, .featured-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
