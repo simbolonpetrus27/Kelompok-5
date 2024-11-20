@@ -13,20 +13,21 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">BIONIK</Link>
+        <Link to="/">Biology Libretexts</Link>
       </div>
       <div className="navbar-menu">
-        <Link to="/home">Home</Link>
-        <Link to="/kilat-biologi">Kilat Biologi</Link>
+        <Link to="/">Home</Link>
+        <Link to="/kilat-biologi">Kilat Biologi</Link> 
+        <Link to="/quiz">Quiz</Link> 
         {isAuthenticated ? (
           <>
-            <button className="logout-button" onClick={handleLogout}>
-              Logout
-            </button>
+            <Link to="/dashboard">Dashboard</Link>
+            <button onClick={handleLogout}>Logout</button>
           </>
         ) : (
           <>
             <Link to="/login">Login</Link>
+            <Link to="/register">Register</Link>
           </>
         )}
       </div>
