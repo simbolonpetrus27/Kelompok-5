@@ -1,9 +1,10 @@
 
 .navbar {
+  font-family: 'monoscape';
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0e8e00;
+  background: linear-gradient(to right, #3498db,#8e44ad);
   padding: 10px 20px;
   color: white;
   position: fixed; 

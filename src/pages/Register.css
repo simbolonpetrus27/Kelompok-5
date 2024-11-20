@@ -7,7 +7,7 @@
   background-color: white;
   position: relative;
   padding-top: 50px;
-  background-color: #2a6227;
+  background: linear-gradient(to right, #3498db,#8e44ad);;
 }
 
 .register-box {
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-  background: #2a6227;
+  background: #4aaeff;
 }
 
 .register-link-container {
@@ -92,7 +92,7 @@ button:hover {
 }
 
 .register-link {
-  color: green;
+  color: #4aaeff;
   font-weight: bold;
 }
 
