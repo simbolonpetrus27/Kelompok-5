@@ -21,7 +21,7 @@ function Home() {
       <div className="hero-section">
         <div className="hero-content">
           <h1>BIONIK</h1>
-          <p>Biologi Online Kelas XI</p>
+          <p>Website yang membantu kamu di Pelajaran Biologi Kelas XI</p>
           <div className="search-box">
             <button onClick={handleExploreClick}>Explore Materi</button>
           </div>
