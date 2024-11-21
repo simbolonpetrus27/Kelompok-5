@@ -1,0 +1,121 @@
+
+.header-container {
+    position: relative;
+    background-image: url("https://files.oaiusercontent.com/file-6QSfImepI8uI6PM33KvCrF1r");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-overlay {
+    background: rgba(255, 223, 94, 0.8);
+    padding: 20px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .header-overlay h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #005a4a; 
+  }
+  
+  .header-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Materi Styles */
+  .materi-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .materi-container h2 {
+    font-size: 1.8rem;
+    color: #005a4a;
+    margin-bottom: 10px;
+  }
+  
+  .materi-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .materi-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bab7-section {
+    background-color: #fff;
+    border: 1px solid #fdd835;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bab7-section .section-title {
+    font-size: 20px;
+    color: #fdd835;
+    margin-bottom: 10px;
+  }
+  
+  .bab7-section ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .bab7-section ul li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+  }
+  .kata-kunci-image {
+    display: block;
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .kata-kunci p {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .kata-kunci ul {
+    padding-left: 20px;
+    list-style-type: none;
+  }
+  
+  .kata-kunci li {
+    margin-bottom: 20px;
+  }
+  
+  .kata-kunci img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  
