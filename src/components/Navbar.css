@@ -4,13 +4,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-<<<<<<< HEAD
   background: linear-gradient(to right, #3498db, #8e44ad);
-=======
   background: linear-gradient(to right, #3498db,#8e44ad);
->>>>>>> ec883773a05fe778fb249d79a1540727bd3f0e1f
   padding: 10px 20px;
-  
   color: white;
   position: fixed; 
   top: 0;
