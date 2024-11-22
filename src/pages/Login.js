@@ -20,7 +20,7 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const savedUser = JSON.parse(localStorage.getItem('user')); // Ambil data pengguna dari localStorage
+    const savedUser = JSON.parse(localStorage.getItem('user')); 
 
     if (
       savedUser &&
@@ -28,8 +28,8 @@ function Login() {
       formData.password === savedUser.password
     ) {
       alert('Login successful!');
-      localStorage.setItem('isLoggedIn', 'true'); // Tandai bahwa pengguna telah login
-      navigate('/Home'); // Arahkan ke halaman home
+      localStorage.setItem('isLoggedIn', 'true'); 
+      navigate('/'); 
     } else {
       setError('Invalid email or password');
     }
