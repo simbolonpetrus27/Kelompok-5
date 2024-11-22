@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Home from './pages/Home'; 
 import Materi from './pages/Materi';
 import Quiz from './pages/Quiz';
+import Bab4 from './pages/bab4';
 import Bab7 from './pages/bab7';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/materi" element={<Materi />} />
         <Route path="/quiz" element={<Quiz />} /> 
+        <Route path="/bab4" element={<Bab4 />} />
         <Route path="/bab7" element={<Bab7 />} /> 
       </Routes>
     </Router>
