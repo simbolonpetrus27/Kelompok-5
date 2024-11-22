@@ -1,14 +1,5 @@
 
-.header-container {
-  position: relative;
-  background-image: url("https://files.oaiusercontent.com/file-6QSfImepI8uI6PM33KvCrF1r");
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .header-overlay {
   background: rgba(255, 223, 94, 0.8);

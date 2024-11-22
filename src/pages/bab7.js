@@ -29,7 +29,7 @@ const Bab7 = () => {
           fertilisasi.
         </p>
         <img
-          src="https://files.oaiusercontent.com/file-01gfExOlkJj8LJXzvmYjSJ87?se=2024-11-21T09%3A21%3A23Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D91399fd1-0c6b-484c-be58-c5182dae2cf5.webp&sig=g9wz5ulXXNtD/bToADEtVdcBGkADg2vjDXu1mStsyZY%3D"
+          src="bab7.jpg"
           alt="Hormon dalam Reproduksi"
           className="materi-image"
         />
@@ -51,7 +51,7 @@ const Bab7 = () => {
       </section>
 
       <section className="bab7-section kata-kunci">
-  <h2 className="section-title">Kata Kunci</h2>
+  
   <ul>
     <li>
       <h2>A.Hormon reproduksi</h2>  

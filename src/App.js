@@ -8,6 +8,7 @@ import Quiz from './pages/Quiz';
 import Bab4 from './pages/bab4';
 import Bab5 from './pages/bab5';
 import Bab7 from './pages/bab7';
+import Bab8 from './pages/bab8';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/bab4" element={<Bab4 />} />
         <Route path="/bab5" element={<Bab5 />} />
         <Route path="/bab7" element={<Bab7 />} /> 
+        <Route path="/bab8" element={<Bab8 />} />
       </Routes>
     </Router>
   );
