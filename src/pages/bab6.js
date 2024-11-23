@@ -1,4 +1,5 @@
 import React from "react";
+import './bab4.css';
 
 const Bab6 = () => {
   return (
