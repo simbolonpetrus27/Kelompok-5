@@ -27,30 +27,29 @@
   background: #f9f9f9;
 }
 
-/* Grid dengan 4 kartu per baris */
 .biology-grid, .featured-grid {
   display: grid;
-  gap: 1.5rem; /* Jarak antar kartu */
-  grid-template-columns: repeat(4, 1fr); /* 4 kolom */
+  gap: 1.5rem; 
+  grid-template-columns: repeat(4, 1fr); 
   justify-content: center;
 }
 
-/* Responsif untuk layar lebih kecil */
+
 @media (max-width: 1024px) {
   .biology-grid, .featured-grid {
-    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk tablet */
+    grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (max-width: 768px) {
   .biology-grid, .featured-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk layar kecil */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 480px) {
   .biology-grid, .featured-grid {
-    grid-template-columns: repeat(1, 1fr); /* 1 kolom untuk layar sangat kecil */
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
 
@@ -62,7 +61,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
-  width: 100%; /* Pastikan ukuran kartu selalu sama */
+  width: 100%; 
 }
 
 .biologi-biology-card:hover, .biologi-featured-card:hover {
