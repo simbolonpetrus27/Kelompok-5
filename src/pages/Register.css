@@ -11,21 +11,21 @@
 }
 
 .register-box {
-  background: url('https://i.pinimg.com/736x/0c/db/67/0cdb673fa6cf15a391f5a5bb67f6b116.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
+  background: url('/public/form.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   width: 90%; 
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: white; 
   margin-top: 10px;
   padding:1.5rem 2.5rem; ;
 }
 
 h1 {
   margin-bottom: 1rem;
-  color: white;
+  background-color: #ddd;
 }
 
 .subtitle-container {
@@ -33,13 +33,6 @@ h1 {
   margin-bottom: 2rem;
   padding: 1rem;
   border-radius: 10px;
-}
-
-.subtitle {
-  margin: 0;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .error-message {

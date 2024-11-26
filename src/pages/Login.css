@@ -13,7 +13,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     text-align: center;
-    background: url('https://i.pinimg.com/736x/0c/db/67/0cdb673fa6cf15a391f5a5bb67f6b116.jpg') no-repeat center center/cover; /* Background image inside login box */
+    background: url('/public/form.jpg') no-repeat center center/cover;
     position: relative;
   }
   
@@ -31,7 +31,7 @@
   
   .subtitle {
     margin: 0;
-    color: white; 
+    color: black; 
     font-size: 1.5rem; 
     font-weight: bold; 
   }
