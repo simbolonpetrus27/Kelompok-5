@@ -5,7 +5,7 @@
   
   .hero-section {
     height: 100vh;
-    background-image:  url('D:\Kelompok-5\public\home.webp');
+    background-image:  url('/public/home.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
