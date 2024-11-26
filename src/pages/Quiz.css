@@ -40,19 +40,6 @@
     transform: scale(1.1);
   }
   
-  .card-category, .featured-rating {
-    position: absolute;
-    top: 0px;
-    left: 10px;
-    background: rgba(255, 255, 255, 0.7);
-    color: #34495e;
-    padding: rem 1rem;
-    font-weight: bold;
-    font-size: 0.7rem;
-    border-radius: 20px;
-    animation: bounceIn 1s ease-in-out;
-  }
-  
   /* Card Content */
   .card-content, .featured-content {
     padding: 1.5rem;

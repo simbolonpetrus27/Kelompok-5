@@ -4,15 +4,15 @@ import './bab4.css';
 const Bab6 = () => {
   return (
     <div className="bab4-container">
-      
-      <h1>Bab 5: Mobilitas pada Manusia</h1>
+
+      <h1>Bab 6: Mobilitas pada Manusia</h1>
       <section>
       <h2>A. Struktur dan Fungsi pada Sistem Saraf</h2>
       <h2>1. Struktur dan Fungsi dalam Sistem Saraf Manusia</h2>
    
         <h3>a. Otak</h3>
         <p>
-        Sistem saraf pusat 
+        Sistem saraf pusat
             terdiri atas otak dan sumsum tulang belakang. Sistem saraf perifer terdiri 
             atas 12 pasang saraf kranial dan 31 pasang saraf spinal. beberapa bagian 
             pada Sistem Saraf perifer terlibat dalam gerak refleks. </p>

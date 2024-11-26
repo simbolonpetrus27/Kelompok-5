@@ -50,9 +50,7 @@ const Bab5 = () => {
         <p>
           Pada pembahasan sebelumnya telah diperlihatkan bahwa sel darah putih (leukosit) merupakan komponen seluler utama dari sistem imun tubuh. Leukosit memiliki berbagai jenis dan peran dalam sistem kekebalan tubuh. Namun, secara umum dapat dibedakan menjadi dua jenis, yaitu fagosit dan limfosit.
         </p>
-      </section>
 
-      <section>
         <h3>1. Fagosit</h3>
         <p>
           Fagosit secara harfiah berarti “sel pemakan”, secara fungsional sel ini akan menghancurkan patogen dengan cara mencernanya di dalam sel. Sel-sel fagosit dibentuk di dalam sumsum tulang, khususnya tulang pipa. Mereka disimpan dalam sumsum tulang sebelum didistribusikan sebelum beredar bersama aliran darah dan cairan limfa ke seluruh bagian tubuh. 
@@ -103,9 +101,55 @@ const Bab5 = () => {
 
       <h3>C. Imunitas Tubuh dan Kelainannya</h3>
       <p>
-        Hingga bahasan ini Kalian telah banyak mempelajari komponen dan mekanisme pertahanan tubuh dalam mencegah dan mengatasi infeksi patogen. Saat sistem pertahanan tubuh berfungsi dengan baik, maka tubuh akan tetap terlindungi dari infeksi. Kemampuan tubuh untuk mengatasi infeksi patogen ini dikenal sebagai imunitas. Upaya menjaga fungsi imunitas tubuh tidak hanya terjadi secara alami tapi juga dapat dilakukan secara buatan melalui tindakan medis atau imunisasi.
-      </p>
+      Saat sistem pertahanan tubuh berfungsi dengan baik, 
+      maka tubuh akan tetap terlindungi dari infeksi. Kemampuan tubuh 
+      untuk mengatasi infeksi patogen ini dikenal sebagai imunitas. Upaya 
+      menjaga fungsi imunitas tubuh tidak hanya terjadi secara alami tapi 
+      juga dapat dilakukan secara buatan melalui tindakan medis atau 
+      imunisasi.</p>
+      <h2>1. Imunitas Aktif dan Pasif</h2>
+      <p>. Jika masih terdapat patogen yang berhasil masuk, maka pertahanan internal 
+          spesifik diaktifkan. Sel limfosit B dalam tubuh mengenali antigen dan 
+          membentuk antibodi. Imunitas yang terbentuk pada proses ini disebut 
+          imunitas aktif alami. Disebut alami karena respon imun muncul 
+          akibat infeksi patogen dan disebut aktif karena antibodi diproduksi 
+          oleh tubuh sendiri. <br/>
+          Imunitas yang terbentuk karena pemasukan antibodi dari luar tubuh 
+          disebut imunitas pasif. Imunitas pasif tidak bertahan lama, tergantung 
+          dari lama ketersediaan antibodi di dalam tubuh. ASI (air susu ibu) yang 
+          diproduksi di awal pasca persalinan (disebut colostrum) diketahui 
+          banyak mengandung antibodi dari ibu. Dengan demikian secara alami, 
+          bayi memperoleh imunitas pasif dengan mendapat suplai antibodi dari 
+          ASI. Pada kasus pasien yang kritis atau mengalami penurunan respon 
+          imun, suplai antibodi dapat diberikan secara buatan dengan donor 
+          plasma. Individu yang sehat dengan produksi antibodi yang melimpah 
+          dapat mendonorkan plasma darahnya tersebut pada individu lain. </p>
+          <h2>2. Kelainan Sistem Pertahanan dan Indikasinya</h2>
+          <h3>a. Alergi</h3>
+          <p>Alergi adalah muculnya respon imun berlebih terhadap zat atau kondisi 
+            tertentu yang normalnya tidak berbahaya bagi tubuh. Respon yang 
+            paling umum adalah dibentuknya histamin oleh leukosit meskipun 
+            tidak terjadi infeksi. Reaksi tersebut dapat menimbulkan berbagai 
+            gejala, seperti pilek, ruam kulit yang gatal, atau bahkan sesak napas. 
+            Alergi terjadi karena terlalu sensitifnya sistem imun tubuh. Zat yang 
+            dapat memicu respons alergi disebut dengan alergen.</p>
+            <h3>b. HIV – AIDS</h3>
+            <p>HIV (Human Immunodeficiency Virus) virus yang menyerang sistem 
+                kekebalan tubuh, khususnya sel limfosit T, sehingga daya tubuh 
+                semakin melemah dan rentan diserang berbagai penyakit. Infeksi 
+                HIV dapat berkembang menjadi AIDS (Acquired Immune Deficiency 
+                Syndrome), kondisi dimana tubuh mengalami berbagai gangguan 
+                kesehatan akibat penurunan fungsi sistem imun. Penyakit ringan pada 
+                orang dengan imunitas normal dapat menjadi mematikan jika terjadi 
+                pada penderita AIDS.  </p>
       <img src="bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
+                <h3>c. Penyakit Autoimun</h3>
+                <p>Penyakit autoimun adalah kondisi ketika sistem pertahanan tubuh 
+                    seseorang menyerang tubuhnya sendiri. Umumnya terjadi pada sistem 
+                    imum spesifik yang kehilangan kemampuan dalam pengenalan sel-sel 
+                    tubuh. Ada lebih dari 80 penyakit yang digolongkan penyakit autoimun. 
+                    Beberapa di antaranya memiliki gejala serupa, seperti kelelahan, nyeri 
+                    otot, dan demam.</p>
       </section>
     </div>
     
