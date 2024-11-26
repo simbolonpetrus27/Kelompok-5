@@ -47,8 +47,8 @@
 }
 
 .search-box button {
-    padding: 1rem 2rem;
-    background: linear-gradient(45deg, #28a745, #2ecc71); 
+    padding: 1rem 9rem;
+    background: linear-gradient(45deg, #103027b0, #66cb9f); 
     color: white;
     border: none;
     border-radius: 50px;
@@ -58,7 +58,7 @@
 
 .search-box button:hover {
     transform: scale(1.05);
-    background: linear-gradient(45deg, #2ecc71, #28a745); 
+    background: linear-gradient(45deg, #2dc5bb, #86dbc2); 
 }
 
   

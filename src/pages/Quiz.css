@@ -53,7 +53,7 @@
   }
   
   .detail-btn, .explore-btn {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    background:linear-gradient(90deg, #72dfac, #2f981c); 
     color: white;
     border: none;
     padding: 0.8rem 2rem;

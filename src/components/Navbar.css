@@ -1,49 +1,90 @@
-
 .navbar {
-  font-family: 'monoscape';
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #3498db, #8e44ad);
-  background: linear-gradient(to right, #3498db,#8e44ad);
-  padding: 10px 20px;
-  color: white;
-  position: fixed; 
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #72dfac, #2f981c); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 1000; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  right: 0;
+  z-index: 1000;
 }
 
-.navbar a {
-  color: white;
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
   text-decoration: none;
-  margin-right: 15px;
-  padding: 5px 10px; 
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
-  background-color: #444; 
-  color: #ff4d4d; 
-}
-
-.navbar .navbar-menu {
+.navbar-menu {
   display: flex;
+  gap: 2rem;
   align-items: center;
 }
 
-.navbar .navbar-menu button {
-  background-color: #ff4d4d;
-  border: none;
-  padding: 5px 10px;
-  color: white;
-  cursor: pointer;
-  border-radius: 3px;
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  transition: color 0.3s ease;
 }
 
-.navbar .navbar-menu button:hover {
-  background-color: #cc0000;
+.navbar-menu a:hover {
+  color: #d4efdf; 
 }
+
+.navbar-menu button {
+  background-color: #6ab04c; 
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-menu button:hover {
+  background-color: #4caf50; 
+  transform: scale(1.05);
+}
+
+
+.navbar:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: repeating-linear-gradient(
+      -45deg,
+      #76cf09,
+      #64e661 10px,
+      #13bc57 10px,
+      #5ad794 20px
+  );
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ecf0f1;
+}
+
+.navbar-brand a:before {
+  content: "🌿";
+  margin-right: 8px;
+}
+
+.navbar-menu a:after {
+  margin-left: 4px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+

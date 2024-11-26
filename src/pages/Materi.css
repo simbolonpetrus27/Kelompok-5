@@ -41,7 +41,7 @@
   content: '';
   width: 60px;
   height: 3px;
-  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  background: linear-gradient(90deg, #72dfac, #2f981c); 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -161,9 +161,9 @@
 }
 
 .detail-btn {
-  background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+  background: linear-gradient(90deg, #72dfac, #2f981c); 
   color: white;
-  border: 2px solid red; 
+  border: 2px solid linear-gradient(90deg, #72dfac, #2f981c); 
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   font-size: 0.9rem;
