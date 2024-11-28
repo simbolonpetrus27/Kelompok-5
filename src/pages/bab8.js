@@ -48,7 +48,7 @@ pada saat berkecambah, dikenal
 dua macam tipe perkecambahan, 
 yaitu epigeal dan hipogeal.</p>
       <img
-        src="tumbuhan.png"
+        src="bab8.1.png"
         alt="Dua Tipe Perkecambahan"
         className="kata-kunci-image"
       />
@@ -70,7 +70,7 @@ Fase pertumbuhan dan perkembangan berikutnya pada hewan
 adalah fase pasca embrionik. Fase ini terjadi setelah embrio terlahir 
 atau menetas menjadi individu baru.</p>
       <img
-        src="hewan.png" 
+        src="bab8.2.png" 
         alt="hewan"
         className="kata-kunci-image"
         
@@ -82,7 +82,7 @@ tubuh seperti bertambah besarnya organ, berat badan, panjang/
  tinggi badan, lingkar kepala dan indikator anggota tubuh lainnya. 
 Pertumbuhan pada manusia akan berhenti saat dewasa.</p>
 <img
-        src="human.png" 
+        src="bab8.3.png" 
         alt="human"
         className="kata-kunci-image"
 />
@@ -108,7 +108,7 @@ bunga, dan rasa buah. Gen juga menentukan kemampuan metabolisme
 sehingga sangat memengaruhi pertumbuhan dan perkembangan 
 tanaman tersebut.</p>
 <img
-        src="Mangga.png" 
+        src="bab8.4.png" 
         alt="Mangga"
         className="kata-kunci-image"
 />
@@ -144,7 +144,7 @@ Hormon auksin adalah hormon yang memicu pertumbuhan tanaman
 untuk tumbuh ke atas.  </p>
 <h4>3.Air dan Kelembapan</h4>
 <img
-    src="segar.png" 
+    src="bab8.5.png" 
         alt="segar"
         className="kata-kunci-image"
       />
@@ -184,7 +184,7 @@ oleh gen yang ada pada tubuh</p>
     <li>
       <h4>2.Hormon</h4>
       <img
-    src="gen.png" 
+    src="bab8.6.png" 
         alt="Hormon"
         className="kata-kunci-image"
       />
@@ -198,7 +198,7 @@ Growth Hormon) (Direktorat Jenderal Pelayanan Kesehatan, 2022). </p>
 sangat dipengaruhi oleh faktor eksternal dari luar tubuh. Faktor-faktor 
 eksternal, yaitu:</p>
       <img
-        src="Eksternal.png" 
+        src="bab8.7.png" 
         alt="Eksternal"
         className="kata-kunci-image"
       />

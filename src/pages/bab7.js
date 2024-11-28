@@ -29,7 +29,7 @@ const Bab7 = () => {
           fertilisasi.
         </p>
         <img
-          src="bab7.jpg"
+          src="bab7.1.jpg"
           alt="Hormon dalam Reproduksi"
           className="materi-image"
         />
@@ -92,7 +92,7 @@ sperma, merangsang perkembangan dan pemeliharaan karakteristik
 kelamin sekunder laki-laki, seperti pertumbuhan janggut dan 
 membesarnya suara.</p>
       <img
-        src="hormon.png"
+        src="bab7.2.png"
         alt="Hormon reproduksi"
         className="kata-kunci-image"
       />
@@ -106,7 +106,7 @@ yang sudah matang. Setelah proses itu akan membentuk zigot yang
 umumnya terjadi pada sepertiga dari panjang saluran telur atau tuba 
 fallopi. Untuk lebih  jelasnya mari kita lihat gambanya dibawah ini </p> 
       <img
-        src="kehamilan.png" 
+        src="bab7.3.png" 
         alt="Kehamilan"
         className="kata-kunci-image"
         
@@ -128,7 +128,7 @@ amino, vitamin, dan mineral dari ibu ke janin, dan pembuangan CO2
 serta sampah metabolisme janin ke peredaran darah ibu, seperti yang 
 ditampilkan</p>
 <img
-    src="kehamilan2.png" 
+    src="bab7.4.png" 
     alt="Kehamilan"
     className="kata-kunci-image"
         
@@ -168,7 +168,7 @@ berkembang, dan dengan ini mulai lagi satu siklus menstruasi yang
 baru. Bila kehamilan tidak terjadi, proses ini berlangsung terus sampai 
 seorang perempuan berumur 45-50 tahun atau sampai usia menopause. </p>
 <img
-    src="mentruasi.png" 
+    src="bab7.5.png" 
         alt="Menstruasi"
         className="kata-kunci-image"
       />
@@ -176,7 +176,7 @@ seorang perempuan berumur 45-50 tahun atau sampai usia menopause. </p>
     <li>
       <h2>D.Struktur dan fungsi organ reproduksi perempuan</h2>
     <img
-        src="wanita.png" 
+        src="bab7.6.png" 
         alt="Struktur dan fungsi organ reproduksi perempuan"
         className="kata-kunci-image"
       />
@@ -227,7 +227,7 @@ vestibula (Moore, 2017).</p>
       
       
       <img
-        src="pria.png" 
+        src="bab7.7.png" 
         alt="Struktur dan fungsi organ reproduksi laki-laki"
         className="kata-kunci-image"
       />
@@ -252,7 +252,7 @@ di dalam testis. Bagian inilah yang menghasilkan spermatogenesis
 (Junquiera, 2018). Untuk lebih jelasnya, struktur testis dapat dilihat 
 pada Gambar dibawah ini</p>
       <img
-        src="pria2.png" 
+        src="bab7.8.png" 
         alt="Testis"
         className="kata-kunci-image"
       />
