@@ -43,7 +43,7 @@ const Bab3 = () => {
         <p>
           Stomata adalah pori-pori kecil yang terdapat pada daun tumbuhan, yang berfungsi untuk pertukaran gas (karbondioksida dan oksigen) serta pengaturan transpirasi (penguapan air). Pengaturan pembukaan dan penutupan stomata sangat penting untuk mengurangi kehilangan air berlebih serta mendukung fotosintesis.
         </p>
-        <img src="bab4.4.jpg" alt="Stomata" className="section-image" />
+        <img src="bab3.4.jpg" alt="Stomata" className="section-image" />
       </section>
 
       <section>
