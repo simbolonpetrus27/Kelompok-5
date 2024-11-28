@@ -17,7 +17,7 @@ function Navbar() {
       </div>
       <div className="navbar-menu">
         <Link to="/">Home</Link>
-        <Link to="/kilat-biologi">Kilat Biologi</Link> 
+        <Link to="/Vidio-Materi">Video Materi </Link> 
         <Link to="/quiz">Quiz</Link> 
         {isAuthenticated ? (
           <>
