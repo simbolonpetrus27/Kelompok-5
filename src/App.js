@@ -7,6 +7,7 @@ import Materi from './pages/Materi';
 import Quiz from './pages/Quiz';
 import Bab1 from './pages/bab1';
 import Bab2 from './pages/bab2';
+import Bab3 from './pages/bab3';
 import Bab4 from './pages/bab4';
 import Bab5 from './pages/bab5';
 import Bab6 from './pages/bab6';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/quiz" element={<Quiz />} /> 
         <Route path="/bab1" element={<Bab1 />} />
         <Route path="/bab2" element={<Bab2 />} />
+        <Route path="/bab3" element={<Bab3 />} />
         <Route path="/bab4" element={<Bab4 />} />
         <Route path="/bab5" element={<Bab5 />} />
         <Route path="/bab6" element={<Bab6 />} />
