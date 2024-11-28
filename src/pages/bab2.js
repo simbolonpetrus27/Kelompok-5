@@ -4,7 +4,7 @@ import './bab2.css';
 const Bab2 = () => {
   return (
     <div className="bab2-container">
-      <h1>Bab 1: Pergerakan Zat Menuju Membran Sel</h1>
+      <h1>Bab 2: Pergerakan Zat Menuju Membran Sel</h1>
 
       <section>
         <h2>1. Pengertian Pergerakan Zat dalam Sel</h2>
