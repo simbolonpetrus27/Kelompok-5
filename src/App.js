@@ -13,6 +13,7 @@ import Bab5 from './pages/bab5';
 import Bab6 from './pages/bab6';
 import Bab7 from './pages/bab7';
 import Bab8 from './pages/bab8';
+import LatihanSoal from "./pages/latihansoal";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/bab6" element={<Bab6 />} />
         <Route path="/bab7" element={<Bab7 />} /> 
         <Route path="/bab8" element={<Bab8 />} />
+        <Route path="/latihansoal" element={<LatihanSoal />} />
       </Routes>
     </Router>
   );
