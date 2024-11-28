@@ -17,6 +17,7 @@ const Bab1 = () => {
         <p>
           Berdasarkan jumlahnya, sel dibagi menjadi dua tipe: sel prokariotik (tanpa inti sel yang jelas) dan sel eukariotik (memiliki inti sel yang jelas). 
         </p>
+        <img src="bab1.animasi.gif" alt="Membran Sel" className="section-image" />
       </section>
 
       <section>
