@@ -18,9 +18,57 @@ const LatihanSoal1 = () => {
         { label: "C. Menyintesis protein", value: "C" },
         { label: "D. Menghasilkan energi", value: "D" },
       ],
-      explanation: "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel.",
+      explanation:
+        "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel.",
     },
-    // Tambahkan pertanyaan lainnya di sini...
+    {
+      question:
+        "Organel pada sel tumbuhan yang merupakan tempat penyimpanan cadangan makanan adalah…",
+      options: [
+        { label: "A. nukleus", value: "A" },
+        { label: "B. leukoplas", value: "B", isCorrect: true },
+        { label: "C. sitoplasma", value: "C" },
+        { label: "D. sitosol", value: "D" },
+      ],
+      explanation:
+        "Organel sel pada tumbuhan yang berfungsi sebagai tempat penyimpanan cadangan makanan disebut dengan leukoplas.",
+    },
+    {
+      question:
+        "Peristiwa mengkerutnya sel pada sel tumbuhan karena air keluar dari sel disebut ….",
+      options: [
+        { label: "A. plasmolisis", value: "A", isCorrect: true },
+        { label: "B. Hipotonik", value: "B" },
+        { label: "C. hemolysis", value: "C" },
+        { label: "D. endositosis", value: "D" },
+        { label: "E. krenasi", value: "E" },
+      ],
+      explanation:
+        "Plasmolisis adalah peristiwa di mana air akan keluar dari sel tumbuhan karena terjadi penurunan tekanan osmotik di dalam sel.",
+    },
+    {
+      question: "Organel yang berfungsi mengatur arah pembelahan sel adalah..",
+      options: [
+        { label: "A. mitokondria", value: "A" },
+        { label: "B. sentrosom", value: "B", isCorrect: true },
+        { label: "C. nucleus", value: "C" },
+        { label: "D. sentromer", value: "D" },
+      ],
+      explanation:
+        "Organel sel yang berfungsi mengatur arah pembelahan sel disebut dengan sentrosom.",
+    },
+    {
+      question: "Organel di bawah ini yang hanya dijumpai pada sel hewan adalah ….",
+      options: [
+        { label: "A. dinding sel", value: "A" },
+        { label: "B. sitoplasma", value: "B" },
+        { label: "C. lisosom", value: "C", isCorrect: true },
+        { label: "D. plastida", value: "D" },
+        { label: "E. kromosom", value: "E" },
+      ],
+      explanation:
+        "Organel yang hanya dijumpai pada sel hewan adalah lisosom. Organel ini berperan memecah dan melakukan pencernaan pada bahan organik dalam sel.",
+    },
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
@@ -41,14 +89,14 @@ const LatihanSoal1 = () => {
   const goToNextQuestion = () => {
     if (currentQuestionIndex < questions.length - 1) {
       setCurrentQuestionIndex((prevIndex) => prevIndex + 1);
-      setIsAnswered(answers[currentQuestionIndex + 1] ? true : false);
+      setIsAnswered(answers[currentQuestionIndex + 1] !== undefined);
     }
   };
 
   const goToPreviousQuestion = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex((prevIndex) => prevIndex - 1);
-      setIsAnswered(answers[currentQuestionIndex - 1] ? true : false);
+      setIsAnswered(answers[currentQuestionIndex - 1] !== undefined);
     }
   };
 
@@ -62,7 +110,9 @@ const LatihanSoal1 = () => {
         <div className="latihan-soal1-question-box">
           <h1 className="latihan-soal1-title">Mode Bionik</h1>
           <h2>Quiz Selesai!</h2>
-          <p>Skor Anda: {score}/{questions.length}</p>
+          <p>
+            Skor Anda: {score}/{questions.length}
+          </p>
         </div>
       </div>
     );
@@ -83,22 +133,26 @@ const LatihanSoal1 = () => {
             <button
               key={index}
               className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""
+                answers[currentQuestionIndex] === option.value
+                  ? "latihan-soal1-selected-answer"
+                  : ""
               }`}
               onClick={() => handleAnswerClick(option)}
-              disabled={answers[currentQuestionIndex]}
+              disabled={answers[currentQuestionIndex] !== undefined}
             >
               {option.label}
             </button>
           ))}
         </div>
-        {answers[currentQuestionIndex] && (
+        {answers[currentQuestionIndex] !== undefined && (
           <div className="latihan-soal1-explanation-box">
             <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
             <h3>
               {isCorrect
                 ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${currentQuestion.options.find((opt) => opt.isCorrect)?.value}`}
+                : `Jawaban Benar: ${
+                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
+                  }`}
             </h3>
             <p>{currentQuestion.explanation}</p>
           </div>
@@ -113,9 +167,15 @@ const LatihanSoal1 = () => {
           </button>
           <button
             className="latihan-soal1-nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
+            onClick={
+              currentQuestionIndex === questions.length - 1
+                ? handleFinishQuiz
+                : goToNextQuestion
+            }
           >
-            {currentQuestionIndex === questions.length - 1 ? "Selesai" : "Soal Selanjutnya →"}
+            {currentQuestionIndex === questions.length - 1
+              ? "Selesai"
+              : "Soal Selanjutnya →"}
           </button>
         </div>
       </div>

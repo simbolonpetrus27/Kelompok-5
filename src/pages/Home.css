@@ -13,15 +13,25 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  text-align: center; 
+}
+
+.hero-content {
+  max-width: 800px; 
 }
 
 .hero-content h1 {
   font-size: 4rem;
   margin-bottom: 1.5rem;
-  color: white;
+  color: rgb(55, 14, 14);
   animation: zoomIn 1.5s ease-out;
   white-space: nowrap;
   overflow: hidden;
+  background: rgba(205, 228, 203, 0.7); 
+  padding: 1rem 2rem; 
+  border-radius: 50px; 
+  display: inline-block; 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
 }
 
 @keyframes zoomIn {
@@ -36,11 +46,11 @@
 }
 
 .hero-content p {
-  font-size: 1.8rem; /* Ukuran lebih besar */
+  font-size: 1.8rem;
   margin-bottom: 2rem;
-  color: #ffcc00; /* Warna lebih menarik */
-  font-family: 'Poppins', sans-serif; /* Font baru */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efek bayangan agar lebih menonjol */
+  color: rgba(255, 204, 0, 0.9); /* Warna lebih terang */
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   animation: fadeInUp 1s ease;
 }
 
@@ -48,9 +58,9 @@
   display: flex;
   gap: 1rem;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 0 auto; /* Tengah horizontal */
   animation: fadeIn 1.5s ease;
-  margin-top: 30vh;
+  margin-top: 5rem; /* Jarak dari konten utama */
 }
 
 .search-box input {
@@ -62,8 +72,8 @@
 }
 
 .search-box button {
-  padding: 1rem 9rem;
-  background: linear-gradient(45deg, #103027b0, #66cb9f); 
+  padding: 1rem 3rem;
+  background: linear-gradient(45deg, #103027b0, #66cb9f);
   color: white;
   border: none;
   border-radius: 50px;
@@ -73,7 +83,7 @@
 
 .search-box button:hover {
   transform: scale(1.05);
-  background: linear-gradient(45deg, #2dc5bb, #86dbc2); 
+  background: linear-gradient(45deg, #2dc5bb, #86dbc2);
 }
 
 @keyframes fadeInUp {
