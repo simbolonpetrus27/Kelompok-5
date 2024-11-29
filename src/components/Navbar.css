@@ -56,22 +56,6 @@
 }
 
 
-.navbar:after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: repeating-linear-gradient(
-      -45deg,
-      #76cf09,
-      #64e661 10px,
-      #13bc57 10px,
-      #5ad794 20px
-  );
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ecf0f1;

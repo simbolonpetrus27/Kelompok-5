@@ -22,10 +22,22 @@
     margin-bottom: 1.5rem;
     animation: fadeInDown 1s ease;
   }
-  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
   .hero-content p {
-    font-size: 1.5rem;
+    font-size: 1.8rem; /* Ukuran lebih besar */
     margin-bottom: 2rem;
+    color: #ffcc00; /* Warna lebih menarik */
+    font-family: 'Poppins', sans-serif; /* Font baru */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efek bayangan agar lebih menonjol */
     animation: fadeInUp 1s ease;
   }
   
@@ -62,281 +74,13 @@
 }
 
   
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .featured-section {
-    padding: 5rem 0;
-    background: #f8f9fa;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .featured-section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2d3436;
-  }
-  
-  .featured-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-  }
-  
-  .featured-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .featured-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .featured-image {
-    position: relative;
-    height: 300px;
-  }
-  
-  .featured-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .featured-rating {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: rgba(255,255,255,0.9);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-weight: bold;
-  }
-  
-  .featured-content {
-    padding: 2rem;
-  }
-  
-  .featured-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #2d3436;
-  }
-  
-  .explore-btn {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    margin-top: 1rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .explore-btn:hover {
-    transform: scale(1.05);
-  }
-  
-  .biology-section {
-    padding: 5rem 0;
-  }
-  
-  .section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3rem;
-  }
-  
-  .categories {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .category-btn {
-    padding: 0.8rem 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    background: transparent;
-    transition: all 0.3s ease;
-  }
-  
-  .category-btn.active,
-  .category-btn:hover {
-    background: #ff6b6b;
-    color: white;
-    border-color: #ff6b6b;
-  }
-  
-  .biology-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
-  .biology-card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .biology-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-image {
-    position: relative;
-    height: 200px;
-  }
-  
-  .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .card-category {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: rgba(255,255,255,0.9);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-weight: bold;
-  }
-  
-  .card-rating {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: rgba(255,255,255,0.9);
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    font-weight: bold;
-  }
-  
-  .card-content {
-    padding: 1.5rem;
-  }
-  
-  .card-content h3 {
-    margin-bottom: 0.5rem;
-    color: #2d3436;
-  }
-  
-  .detail-btn {
-    background: transparent;
-    color: #ff6b6b;
-    border: 1px solid #ff6b6b;
-    padding: 0.8rem 1.5rem;
-    border-radius: 50px;
-    margin-top: 1rem;
-    transition: all 0.3s ease;
-  }
-  
-  .detail-btn:hover {
-    background: #ff6b6b;
-    color: white;
-  }
-  
-  .cta-section {
-    padding: 5rem 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-    text-align: center;
-  }
-  
-  .cta-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
-  .cta-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .cta-btn {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 1rem 3rem;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-  }
-  
-  .cta-btn:hover {
-    transform: scale(1.05);
-  }
-  
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-  
-    .hero-content p {
-      font-size: 1.2rem;
-    }
-  
-    .featured-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .section-header {
-      flex-direction: column;
-      gap: 1rem;
-    }
-  
-    .categories {
-      width: 100%;
-      overflow-x: auto;
-      padding-bottom: 1rem;
-    }
-  
-    .category-btn {
-      white-space: nowrap;
-    }
-  }
+}
