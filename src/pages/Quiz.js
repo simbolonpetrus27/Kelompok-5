@@ -43,9 +43,7 @@ const Quiz = () => {
             <div key={item.id} className="featured-card">
               <div className="featured-image">
                 <img src={item.image} alt={item.name} />
-                <div className="featured-rating">
-                  <span>⭐ {item.rating || 5}</span>
-                </div>
+               
               </div>
               <div className="featured-content">
                 <h3>{item.name}</h3>
