@@ -16,6 +16,8 @@
   position: relative;
   margin-bottom: 1rem;
   animation: zoomInOut 2.5s infinite ease-in-out; /* Animasi tanpa henti */
+  outline: none; 
+  border: none;
 }
 
 

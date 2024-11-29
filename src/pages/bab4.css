@@ -18,6 +18,7 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    background: rgba(205, 228, 203, 0.7); 
   }
   
   h2 {
