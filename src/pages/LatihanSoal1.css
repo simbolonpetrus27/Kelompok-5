@@ -1,175 +1,73 @@
-body {
+.latihan-soal1-container {
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Mengatur konten di atas */
-    height: 100%;
+    align-items: flex-start;
     min-height: 100vh;
-    overflow-y: auto;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    width: 100%;
-    max-width: 700px;
-    margin: 20px; /* Memberikan margin di sekitar container agar tidak menempel di tepi */
     padding: 20px;
+  }
+  
+  .latihan-soal1-question-box {
     background: #ffffff;
     border-radius: 15px;
+    padding: 20px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    height: 100%; /* Menyediakan ruang penuh untuk konten */
-    max-height: none; /* Menghilangkan pembatas tinggi maksimum */
-    overflow-y: auto; /* Membuat container bisa di-scroll jika konten lebih tinggi dari container */
-    box-sizing: border-box; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Membiarkan konten dimulai dari atas */
-}
-
-.title {
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .latihan-soal1-title {
     font-size: 28px;
-    text-align: center;
-    color: #babfc5;
-    font-weight: bold;
-    margin: 20px 0 0;
-    padding-top: 10px;
-    
-}
-
-.question {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.question h2 {
-    font-size: 20px;
     color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.question p {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .latihan-soal1-question {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .latihan-soal1-question p {
     font-size: 18px;
     color: #7f8c8d;
-}
-
-.answers {
+  }
+  
+  .latihan-soal1-answers {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin: 20px 0;
-}
-
-.answer-button {
+  }
+  
+  .latihan-soal1-answer-button {
     padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
     background: linear-gradient(90deg, #1d976c, #93f9b9);
     border: none;
     border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-}
-
-.answer-button:hover {
+  }
+  
+  .latihan-soal1-answer-button:hover {
     background: linear-gradient(90deg, #1d976c, #1ed760);
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.answer-button:disabled {
+  }
+  
+  .latihan-soal1-answer-button:disabled {
     background: #8f9595;
     cursor: not-allowed;
-}
-
-.selected-answer {
+  }
+  
+  .latihan-soal1-selected-answer {
     background: linear-gradient(90deg, #3498db, #6dd5ed);
-    color: #ffffff;
-    border: 2px solid #2980b9;
-}
-
-.explanation-box {
-    margin-top: 20px;
-    padding: 15px;
-    background: #ecf0f1;
-    border-radius: 10px;
-    text-align: center;
-    border: 2px solid #131415;
-}
-
-.explanation-box h2 {
-    font-size: 20px;
-    color: #27ae60;
-}
-
-.explanation-box h3 {
-    font-size: 18px;
-    color: #e74c3c;
-    margin: 10px 0;
-}
-
-.explanation-box p {
-    font-size: 16px;
-    color: #131415;
-}
-
-.navigation-buttons {
+  }
+  
+  .latihan-soal1-navigation-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-}
-
-.nav-button {
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    background: linear-gradient(90deg, #f7971e, #ffd200);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-
-
-
-.score-box {
-    padding: 20px;
-    background: linear-gradient(90deg, #1d976c, #93f9b9);
-    color: #ffffff;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
-}
-
-.score-box h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.score-box p {
-    font-size: 18px;
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 15px;
-        margin-top: 20px;
-    }
-
-    .answers {
-        gap: 10px;
-    }
-
-    .nav-button {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-}
+  }
+  

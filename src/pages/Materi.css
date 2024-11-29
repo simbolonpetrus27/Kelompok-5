@@ -31,13 +31,6 @@
   }
 }
 
-.section-header h2:hover {
-  color: #1cba90;
-  transform: scale(1.25); 
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-
 .section-header h2::after {
   content: '';
   width: 40px;
@@ -57,11 +50,10 @@
 
 .biology-grid, .featured-grid {
   display: grid;
-  gap: 1.5rem; 
+  gap: 2rem; /* Memberikan jarak antar kartu */
   grid-template-columns: repeat(4, 1fr); 
   justify-content: center;
 }
-
 
 @media (max-width: 1024px) {
   .biology-grid, .featured-grid {
@@ -83,11 +75,14 @@
 
 /* Kartu */
 .biologi-biology-card, .biologi-featured-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
-  border-radius: 20px;
+  background: white;
+  border-radius: 15px; /* Membuat radius lebih melengkung */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  width: 100%; 
+  margin: 0 auto; /* Menjaga kartu tetap sejajar */
 }
 
 .biologi-biology-card:hover, .biologi-featured-card:hover {
@@ -125,20 +120,18 @@
 }
 
 .card-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  padding: 1.5rem; /* Menambah sedikit padding di dalam kartu */
+  text-align: center;
 }
 
 .card-content h3 {
   font-size: 1.2rem;
-  margin: 0.5rem;
+  margin-bottom: 0.5rem;
   color: #2c3e50;
 }
 
 .card-content p {
-  font-size: 1;
+  font-size: 0.9rem;
   margin-bottom: 1rem;
   color: #555;
 }
@@ -152,8 +145,6 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  align-self: center;
-  margin-top: auto;
 }
 
 .detail-btn:hover {

@@ -14,6 +14,8 @@ import Bab6 from './pages/bab6';
 import Bab7 from './pages/bab7';
 import Bab8 from './pages/bab8';
 import LatihanSoal from "./pages/latihansoal";
+import LatihanSoal1 from "./pages/LatihanSoal1";
+
 import VideoMateri from './pages/VideoMateri';
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
         <Route path="/bab7" element={<Bab7 />} /> 
         <Route path="/bab8" element={<Bab8 />} />
         <Route path="/latihansoal" element={<LatihanSoal />} />
+        <Route path="/latihansoal1" element={<LatihanSoal1 />} />
         <Route path="/vidio" element={<VideoMateri />} />
       </Routes>
     </Router>
