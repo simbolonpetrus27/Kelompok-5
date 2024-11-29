@@ -10,7 +10,7 @@ const Quiz = () => {
     const mockFeatured = [
       {
         id: 5,
-        name: "Latihan Soal",
+        name: "Latihan Soal", 
         description: "Pahami Beberapa Bagian Dari Soal",
         image:
           "https://i.pinimg.com/564x/51/05/b5/5105b58a62d7ae9fb99e288e83625365.jpg",
@@ -43,9 +43,7 @@ const Quiz = () => {
             <div key={item.id} className="featured-card">
               <div className="featured-image">
                 <img src={item.image} alt={item.name} />
-                <div className="featured-rating">
-                  <span>⭐ {item.rating || 5}</span>
-                </div>
+               
               </div>
               <div className="featured-content">
                 <h3>{item.name}</h3>
