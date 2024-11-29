@@ -87,7 +87,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 .biologi-biology-card:hover, .biologi-featured-card:hover {
