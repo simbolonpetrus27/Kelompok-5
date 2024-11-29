@@ -15,16 +15,13 @@ import Bab7 from './pages/bab7';
 import Bab8 from './pages/bab8';
 import LatihanSoal from "./pages/latihansoal";
 import LatihanSoal1 from "./pages/LatihanSoal1";
-<<<<<<< HEAD
 import LatihanSoal2 from "./pages/LatihanSoal2";
 import LatihanSoal3 from "./pages/LatihanSoal3";
-=======
 import LatihanSoal4 from "./pages/LatihanSoal4";
 import LatihanSoal5 from './pages/LatihanSoal5.js';
 import LatihanSoal6 from "./pages/LatihanSoal6";
 import LatihanSoal7 from "./pages/LatihanSoal7";
 import LatihanSoal8 from "./pages/LatihanSoal8";
->>>>>>> 90a0843b95db84f48c89d04ea76f4847364733bd
 import VideoMateri from './pages/VideoMateri';
 
 function App() {
@@ -47,16 +44,13 @@ function App() {
         <Route path="/bab8" element={<Bab8 />} />
         <Route path="/latihansoal" element={<LatihanSoal />} />
         <Route path="/latihansoal1" element={<LatihanSoal1 />} />
-<<<<<<< HEAD
-        <Route path="/latihansoal2" element={<LatihanSoal2 />} />
+       <Route path="/latihansoal2" element={<LatihanSoal2 />} />
         <Route path="/latihansoal3" element={<LatihanSoal3 />} />
-=======
         <Route path="/latihansoal4" element={<LatihanSoal4 />} />
         <Route path="/latihansoal5" element={<LatihanSoal5/>} />
         <Route path="/latihansoal6" element={<LatihanSoal6 />} />
         <Route path="/latihansoal7" element={<LatihanSoal7 />} />
         <Route path="/latihansoal8" element={<LatihanSoal8 />} />
->>>>>>> 90a0843b95db84f48c89d04ea76f4847364733bd
         <Route path="/vidio" element={<VideoMateri />} />
       </Routes>
     </Router>
