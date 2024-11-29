@@ -11,54 +11,65 @@ const LatihanSoal = () => {
 
   const questions = [
     {
-      question: "Apa yang dimaksud dengan mobilitas fisik?",
+      question: "Apa yang dimaksud dengan transportasi zat dalam tubuh manusia?",
       options: [
-        { label: "A. Kemampuan untuk berpindah tempat secara sosial", value: "A" },
-        { label: "B. Kemampuan untuk bergerak dengan bebas dan efektif", value: "B", isCorrect: true },
-        { label: "C. Kemampuan untuk berkomunikasi dengan orang lain", value: "C" },
-        { label: "D. Kemampuan untuk mengakses informasi", value: "D" },
+        { label: "A. Proses pencernaan makanan", value: "A" },
+        {
+          label: "B. Proses pengangkutan zat-zat penting ke seluruh tubuh",
+          value: "B",
+          isCorrect: true,
+        },
+        { label: "C. Proses penyerapan nutrisi di usus", value: "C" },
+        { label: "D. Proses ekskresi zat sisa", value: "D" },
       ],
-      explanation: "Mobilitas fisik merujuk pada kemampuan individu untuk bergerak dengan bebas dan efektif dalam melakukan aktivitas sehari-hari, seperti berjalan, berlari, dan melakukan gerakan lainnya.",
+      explanation:
+        "Transportasi zat dalam tubuh manusia adalah proses pengangkutan zat-zat penting seperti oksigen, nutrisi, dan hormon ke seluruh bagian tubuh melalui sistem peredaran darah.",
     },
     {
-      question: "Apa fungsi utama sistem otot dalam mobilitas manusia?",
+      question: "Apa fungsi utama hemoglobin dalam darah?",
       options: [
-        { label: "A. Menghasilkan energi", value: "A" },
-        { label: "B. Menyimpan mineral", value: "B" },
-        { label: "C. Menghasilkan gerakan", value: "C", isCorrect: true },
-        { label: "D. Mengatur suhu tubuh", value: "D" },
+        { label: "A. Mengangkut karbon dioksida", value: "A" },
+        { label: "B. Mengangkut oksigen", value: "B", isCorrect: true },
+        { label: "C. Mengatur pH darah", value: "C" },
+        { label: "D. Memproduksi sel darah merah", value: "D" },
       ],
-      explanation: "Sistem otot berfungsi untuk menghasilkan gerakan dengan berkontraksi dan menarik tulang, sehingga memungkinkan individu untuk bergerak.",
+      explanation:
+        "Hemoglobin adalah protein yang terdapat dalam sel darah merah dan berfungsi utama untuk mengangkut oksigen dari paru-paru ke seluruh tubuh.",
     },
     {
-      question: "Apa yang dapat terjadi pada mobilitas seseorang seiring bertambahnya usia?",
+      question:
+        "Di mana proses pertukaran gas (oksigen dan karbon dioksida) terjadi dalam tubuh manusia?",
       options: [
-        { label: "A. Meningkatnya kekuatan otot", value: "A" },
-        { label: "B. Penurunan fleksibilitas dan kekuatan otot", value: "B", isCorrect: true },
-        { label: "C. Peningkatan mobilitas sosial", value: "C" },
-        { label: "D. Tidak ada perubahan signifikan", value: "D" },
+        { label: "A. Di jantung", value: "A" },
+        { label: "B. Di paru-paru", value: "B", isCorrect: true },
+        { label: "C. Di hati", value: "C" },
+        { label: "D. Di ginjal", value: "D" },
       ],
-      explanation: "Seiring bertambahnya usia, banyak orang mengalami penurunan fleksibilitas dan kekuatan otot, yang dapat mengurangi kemampuan mereka untuk bergerak dengan bebas.",
+      explanation:
+        "Proses pertukaran gas terjadi di paru-paru, tepatnya di alveolus, di mana oksigen dari udara masuk ke dalam darah dan karbon dioksida dikeluarkan dari darah ke udara.",
     },
     {
-      question: "Sendi mana yang memungkinkan gerakan rotasi?",
+      question: "Zat apa yang diangkut oleh sistem limfatik?",
       options: [
-        { label: "A. Sendi engsel", value: "A" },
-        { label: "B. Sendi peluru", value: "B" },
-        { label: "C. Sendi geser", value: "C" },
-        { label: "D. Sendi pivot", value: "D", isCorrect: true },
+        { label: "A. Hormon", value: "A" },
+        { label: "B. Oksigen", value: "B" },
+        { label: "C. Lemak dan limfa", value: "C", isCorrect: true },
+        { label: "D. Karbon dioksida", value: "D" },
       ],
-      explanation: "Sendi pivot memungkinkan gerakan rotasi, seperti yang terjadi pada sendi antara tulang leher dan tulang tengkorak.",
+      explanation:
+        "Sistem limfatik berfungsi untuk mengangkut lemak yang diserap dari usus serta limfa, yang mengandung sel-sel imun, dari jaringan tubuh kembali ke aliran darah.",
     },
     {
-      question: "Apa yang dapat dilakukan untuk meningkatkan mobilitas pada usia lanjut?",
+      question:
+        "Apa yang terjadi pada sel-sel tubuh saat kekurangan oksigen?",
       options: [
-        { label: "A. Menghindari aktivitas fisik", value: "A" },
-        { label: "B. Melakukan latihan kekuatan dan fleksibilitas", value: "B", isCorrect: true },
-        { label: "C. Mengurangi asupan nutrisi", value: "C" },
-        { label: "D. Tidur lebih lama", value: "D" },
+        { label: "A. Sel-sel akan membelah lebih cepat", value: "A" },
+        { label: "B. Sel-sel akan mengalami kematian", value: "B", isCorrect: true },
+        { label: "C. Sel-sel akan berfungsi lebih efisien", value: "C" },
+        { label: "D. Sel-sel akan menghasilkan energi melalui respirasi aerob", value: "D" },
       ],
-      explanation: "Melakukan latihan kekuatan dan fleksibilitas dapat membantu meningkatkan mobilitas pada usia lanjut dengan menjaga kekuatan otot dan fleksibilitas sendi.",
+      explanation:
+        "Kekurangan oksigen pada sel-sel tubuh dapat menyebabkan gangguan fungsi sel dan akhirnya kematian sel, karena sel tidak dapat melakukan respirasi aerob yang diperlukan untuk menghasilkan energi.",
     },
   ];
 
@@ -149,29 +160,29 @@ const LatihanSoal = () => {
           </div>
         )}
         <div className="latihan-soal1-navigation-buttons">
-          <button
-            className="latihan-soal1-nav-button prev"
-            onClick={goToPreviousQuestion}
-            disabled={currentQuestionIndex === 0}
-          >
-            ← Soal Sebelumnya
-          </button>
-          <button
-            className="latihan-soal1-nav-button next"
-            onClick={
-              currentQuestionIndex === questions.length - 1
-                ? handleFinishQuiz
-                : goToNextQuestion
-            }
-          >
-            {currentQuestionIndex === questions.length - 1
-              ? "Selesai"
-              : "Soal Selanjutnya →"}
-          </button>
+        <button
+  className="latihan-soal1-nav-button prev"
+  onClick={goToPreviousQuestion}
+  disabled={currentQuestionIndex === 0}
+>
+  ← Soal Sebelumnya
+</button>
+<button
+  className="latihan-soal1-nav-button next"
+  onClick={
+    currentQuestionIndex === questions.length - 1
+      ? handleFinishQuiz
+      : goToNextQuestion
+  }
+>
+  {currentQuestionIndex === questions.length - 1
+    ? "Selesai"
+    : "Soal Selanjutnya →"}
+</button>
+
         </div>
       </div>
     </div>
   );
 };
-
 export default LatihanSoal;
