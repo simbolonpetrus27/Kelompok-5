@@ -17,6 +17,8 @@ import LatihanSoal from "./pages/latihansoal";
 import LatihanSoal1 from "./pages/LatihanSoal1";
 import LatihanSoal4 from "./pages/LatihanSoal4";
 import LatihanSoal6 from "./pages/LatihanSoal6";
+import LatihanSoal7 from "./pages/LatihanSoal7";
+import LatihanSoal8 from "./pages/LatihanSoal8";
 import VideoMateri from './pages/VideoMateri';
 
 function App() {
@@ -41,6 +43,8 @@ function App() {
         <Route path="/latihansoal1" element={<LatihanSoal1 />} />
         <Route path="/latihansoal4" element={<LatihanSoal4 />} />
         <Route path="/latihansoal6" element={<LatihanSoal6 />} />
+        <Route path="/latihansoal7" element={<LatihanSoal7 />} />
+        <Route path="/latihansoal8" element={<LatihanSoal8 />} />
         <Route path="/vidio" element={<VideoMateri />} />
       </Routes>
     </Router>
