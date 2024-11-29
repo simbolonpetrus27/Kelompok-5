@@ -83,13 +83,11 @@
 
 /* Kartu */
 .biologi-biology-card, .biologi-featured-card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  border-radius: 30px;
 }
 
 .biologi-biology-card:hover, .biologi-featured-card:hover {
@@ -127,18 +125,20 @@
 }
 
 .card-content {
-  padding: 1rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .card-content h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem;
   color: #2c3e50;
 }
 
 .card-content p {
-  font-size: 0.9rem;
+  font-size: 1;
   margin-bottom: 1rem;
   color: #555;
 }
@@ -152,6 +152,8 @@
   font-size: 0.9rem;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-self: center;
+  margin-top: auto;
 }
 
 .detail-btn:hover {
