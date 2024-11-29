@@ -1,79 +1,81 @@
 .home {
-    padding-top: 0;
-    font-family: 'monoscape';
+  padding-top: 0;
+  font-family: 'monoscape';
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('/public/Dashboard.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  animation: zoomIn 1.5s ease-out;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
   }
-  
-  .hero-section {
-    height: 100vh;
-    background-image:  url('/public/home.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
-  
-  
-  
-  .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    animation: fadeInDown 1s ease;
-  }
-  @keyframes zoomIn {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  .hero-content p {
-    font-size: 1.8rem; /* Ukuran lebih besar */
-    margin-bottom: 2rem;
-    color: #ffcc00; /* Warna lebih menarik */
-    font-family: 'Poppins', sans-serif; /* Font baru */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efek bayangan agar lebih menonjol */
-    animation: fadeInUp 1s ease;
-  }
-  
-  .search-box {
-    display: flex;
-    gap: 1rem;
-    max-width: 600px;
-    margin: 2rem auto; /* Tambahkan jarak lebih besar ke bawah */
-    animation: fadeIn 1.5s ease;
-    margin-top: 30vh; /* Menempatkan lebih jauh ke bawah layar */
+}
+
+.hero-content p {
+  font-size: 1.8rem; /* Ukuran lebih besar */
+  margin-bottom: 2rem;
+  color: #ffcc00; /* Warna lebih menarik */
+  font-family: 'Poppins', sans-serif; /* Font baru */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Efek bayangan agar lebih menonjol */
+  animation: fadeInUp 1s ease;
+}
+
+.search-box {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  animation: fadeIn 1.5s ease;
+  margin-top: 30vh;
 }
 
 .search-box input {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
 }
 
 .search-box button {
-    padding: 1rem 9rem;
-    background: linear-gradient(45deg, #103027b0, #66cb9f); 
-    color: white;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    transition: transform 0.3s ease, background 0.3s ease;
+  padding: 1rem 9rem;
+  background: linear-gradient(45deg, #103027b0, #66cb9f); 
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .search-box button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, #2dc5bb, #86dbc2); 
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #2dc5bb, #86dbc2); 
 }
 
-  
 @keyframes fadeInUp {
   from {
     opacity: 0;
