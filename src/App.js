@@ -16,6 +16,7 @@ import Bab8 from './pages/bab8';
 import LatihanSoal from "./pages/latihansoal";
 import LatihanSoal1 from "./pages/LatihanSoal1";
 import LatihanSoal4 from "./pages/LatihanSoal4";
+import LatihanSoal5 from './pages/LatihanSoal5.js';
 import LatihanSoal6 from "./pages/LatihanSoal6";
 import LatihanSoal7 from "./pages/LatihanSoal7";
 import LatihanSoal8 from "./pages/LatihanSoal8";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/latihansoal" element={<LatihanSoal />} />
         <Route path="/latihansoal1" element={<LatihanSoal1 />} />
         <Route path="/latihansoal4" element={<LatihanSoal4 />} />
+        <Route path="/latihansoal5" element={<LatihanSoal5/>} />
         <Route path="/latihansoal6" element={<LatihanSoal6 />} />
         <Route path="/latihansoal7" element={<LatihanSoal7 />} />
         <Route path="/latihansoal8" element={<LatihanSoal8 />} />
