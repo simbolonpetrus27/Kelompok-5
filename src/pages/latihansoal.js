@@ -23,10 +23,6 @@ const LatihanSoal = () => {
         <source src="background.mp4" type="video/mp4" />
       </video>
       <h1>Siap Mengasah Kemampuanmu?</h1>
-      <p>
-        Tingkatkan pemahamanmu dengan menjelajahi berbagai bab di bawah ini. Pilih materi favoritmu
-        dan mulai tantangan serunya!
-      </p>
       <div className="bab-list">
         {babList.map((bab) => (
           <div key={bab.id} className="bab-card">
