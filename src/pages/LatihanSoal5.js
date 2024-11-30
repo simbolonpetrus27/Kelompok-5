@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./LatihanSoal5.css";
+import "./LatihanSoal1.css";
 
 const LatihanSoal5 = () => {
   const [answers, setAnswers] = useState([]);
@@ -115,22 +115,22 @@ const LatihanSoal5 = () => {
   }
 
   return (
-    <div className="latihan-soal5-container">
-      <div className="latihan-soal5-question-box">
-        <h1 className="latihan-soal5-title">Mode Bionik</h1>
-        <div className="latihan-soal5-question">
+    <div className="latihan-soal1-container">
+      <div className="latihan-soal1-question-box">
+        <h1 className="latihan-soal1-title">Mode Bionik</h1>
+        <div className="latihan-soal1-question">
           <h2>
             Soal Nomor {currentQuestionIndex + 1}/{questions.length}
           </h2>
           <p>{currentQuestion.question}</p>
         </div>
-        <div className="latihan-soal5-answers">
+        <div className="latihan-soal1-answers">
           {currentQuestion.options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal5-answer-button ${
+              className={`latihan-soal1-answer-button ${
                 answers[currentQuestionIndex] === option.value
-                  ? "latihan-soal5-selected-answer"
+                  ? "latihan-soal1-selected-answer"
                   : ""
               }`}
               onClick={() => handleAnswerClick(option)}
@@ -141,7 +141,7 @@ const LatihanSoal5 = () => {
           ))}
         </div>
         {answers[currentQuestionIndex] !== undefined && (
-          <div className="latihan-soal5-explanation-box">
+          <div className="latihan-soal1-explanation-box">
             <h2>Jawaban Anda: {answers[currentQuestionIndex]}</h2>
             <h3>
               {isCorrect
@@ -153,16 +153,16 @@ const LatihanSoal5 = () => {
             <p>{currentQuestion.explanation}</p>
           </div>
         )}
-        <div className="latihan-soal5-navigation-buttons">
+        <div className="latihan-soal1-navigation-buttons">
           <button
-            className="latihan-soal5-nav-button prev"
+            className="latihan-soal1-nav-button prev"
             onClick={goToPreviousQuestion}
             disabled={currentQuestionIndex === 0}
           >
             ← Soal Sebelumnya
           </button>
           <button
-            className="latihan-soal5-nav-button next"
+            className="latihan-soal1-nav-button next"
             onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
           >
             {currentQuestionIndex === questions.length - 1

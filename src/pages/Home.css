@@ -21,7 +21,7 @@
 
 .hero-content {
   max-width: 800px;
-  box-shadow: 0 4px 20px rgba(34, 139, 34, 0.4); /* Bayangan hijau lembut di sekitar */
+  box-shadow: 0 4px 20px rgba(34, 139, 34, 0.4); 
   padding: 2rem; 
   border-radius: 15px;
 }
@@ -53,10 +53,16 @@
   display: flex;
   gap: 1rem;
   max-width: 600px;
-  margin: 5rem auto; /* Tengah horizontal dengan jarak */
+  margin: 5rem auto; 
   animation: fadeIn 1.5s ease;
   box-shadow: 0 6px 15px rgba(34, 139, 34, 0.4);
   border-radius: 10px;
+}
+.search-box button:hover {
+  transform: scale(1.1); 
+  background: linear-gradient(45deg, #66cb9f, #103027b0); 
+  box-shadow: 0 8px 20px rgba(66, 245, 164, 0.8); 
+  cursor: pointer; 
 }
 
 .search-box input {
