@@ -19,12 +19,10 @@
 .featured-section h2 {
   font-size: 3rem;
   font-weight: bold;
-  color: #0e0f0f;
+  color: #eafbf7;
   margin: 4rem 0 4rem 0;
   outline: none; 
   border: none;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
-  background: rgba(205, 228, 203, 0.7);
 
 }
 
@@ -39,7 +37,7 @@
 .featured-card {
   background: white;
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);/* Efek bayangan */
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -64,7 +62,7 @@
   object-fit: cover; /* Agar gambar sesuai ukuran */
   transition: transform 0.3s ease;
 }
-
+ 
 /* Efek hover pada gambar */
 .featured-image img:hover {
   transform: scale(1.1); /* Zoom in */

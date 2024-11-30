@@ -37,7 +37,7 @@ const Quiz = () => {
   return (
     <div className="featured-section">
       <div className="container">
-        <h2>Uji Kompetensi Anda</h2>
+        <h2>Uji Kompetensi Anda !</h2>
         <div className="featured-grid">
           {featured.map((item) => (
             <div key={item.id} className="featured-card">

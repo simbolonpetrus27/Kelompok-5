@@ -47,6 +47,7 @@
   z-index: 2;
   font-weight: bold;
   letter-spacing: 1px;
+  background: none;
 }
 
 
@@ -62,16 +63,21 @@
 
 /* Kartu bab */
 .bab-card {
-  background: linear-gradient(135deg, #ffffff, #e0f7fa); /* Gradien putih ke biru muda */
+  background: linear-gradient(135deg, #ffffff, #e0f7fa);
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   padding: 1.5rem;
   width: 100%;
   max-width: 320px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Menambahkan transisi perubahan background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   cursor: pointer;
   z-index: 2;
   overflow: hidden;
+  /* Flexbox untuk tata letak elemen */
+  display: flex;
+  flex-direction: column; /* Elemen diatur secara vertikal */
+  justify-content: space-between; /* Ruang di antara elemen atas dan tombol */
+  height: 100%; /* Tinggi penuh kartu */
 }
 
 /* Hover effect */

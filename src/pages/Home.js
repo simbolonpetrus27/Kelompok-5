@@ -28,18 +28,7 @@ function Home() {
           </div>
         </div>
       </div>
-        <div className="biology-list">
-          {biologyTopics.map((topic) => (
-            <div key={topic.id} className="biology-card">
-              <img src={topic.image} alt={topic.name} />
-              <h3>{topic.name}</h3>
-              <p>{topic.description}</p>
-              <p>Rating: {topic.rating}</p>
-              <p>Category: {topic.category}</p>
-            </div>
-          ))}
         </div>
-      </div>
   
   );
 }
