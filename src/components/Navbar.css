@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: linear-gradient(90deg, #72dfac, #2f981c); 
+  background: linear-gradient(90deg, rgba(62, 113, 89, 0.6), rgba(13, 18, 13, 0.6));
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -30,31 +30,36 @@
 .navbar-menu a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin: 0 1rem;
   transition: color 0.3s ease;
+  position: relative;
 }
 
 .navbar-menu a:hover {
-  color: #d4efdf; 
+  color: #d4efdf;
 }
 
 .navbar-menu button {
-  background-color: #6ab04c; 
-  color: white;
+  background: linear-gradient(45deg, #161414, #4caf50);
+  color: #ffffff;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-menu button:hover {
-  background-color: #4caf50; 
-  transform: scale(1.05);
+  background: linear-gradient(45deg, #141a14, #2e7d32);
+  transform: scale(0.95);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
-
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -72,3 +77,9 @@ body {
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .navbar-menu button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
