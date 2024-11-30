@@ -1,6 +1,6 @@
 /* Container untuk section utama */
 .featured-section {
-  background-image: url('/public/Dashboard.jpg'); /* Ganti dengan path gambar Anda */
+  background-image: url('/public/hijau.jpg'); /* Ganti dengan path gambar Anda */
   background-size: cover; 
   background-position: center; 
   background-color: rgba(0, 0, 0, 0.5); /* Tambahkan transparansi */

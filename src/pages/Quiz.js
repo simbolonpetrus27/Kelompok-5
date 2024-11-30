@@ -4,7 +4,7 @@ import "./Quiz.css";
 
 const Quiz = () => {
   const [featured, setFeatured] = useState([]);
-  const navigate = useNavigate(); // Inisialisasi navigasi
+  const navigate = useNavigate(); 
 
   useEffect(() => {
     const mockFeatured = [
@@ -24,14 +24,14 @@ const Quiz = () => {
       },
     ];
 
-    setFeatured(mockFeatured); // Perbarui state
+    setFeatured(mockFeatured); 
   }, []);
 
   const handleExploreClick = (id) => {
     if (id === 5) {
-      navigate("/latihansoal"); // Navigasi ke halaman latihansoal
+      navigate("/latihansoal"); 
     }
-    // Tambahkan logika navigasi lainnya jika diperlukan
+   
   };
 
   return (
