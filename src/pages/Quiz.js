@@ -21,6 +21,7 @@ const Quiz = () => {
         description: "Uji Pemahaman Anda",
         image:
           "https://i.pinimg.com/564x/98/54/78/985478d23ce8bf017cc05406c0c9fa7a.jpg",
+        
       },
     ];
 
@@ -30,6 +31,9 @@ const Quiz = () => {
   const handleExploreClick = (id) => {
     if (id === 5) {
       navigate("/latihansoal"); // Navigasi ke halaman latihansoal
+    }
+    if (id === 6) {
+      navigate("/tryout"); // Navigasi ke halaman latihansoal
     }
     // Tambahkan logika navigasi lainnya jika diperlukan
   };

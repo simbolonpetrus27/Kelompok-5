@@ -1,9 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./tryout.css";
+import "./Tryout.css";
 
 
-const LatihanSoal = () => {
+const Tryout = () => {
   const navigate = useNavigate();
 
   const babList = [
@@ -22,7 +22,7 @@ const LatihanSoal = () => {
       <video className="video-background" autoPlay loop muted>
         <source src="background.mp4" type="video/mp4" />
       </video>
-      <h1>Siap Mengasah Kemampuanmu?</h1>
+      <h1>Uji Kemampuanmu dengan tepat?</h1>
       <div className="bab-list">
         {babList.map((bab) => (
           <div key={bab.id} className="bab-card">
@@ -36,4 +36,4 @@ const LatihanSoal = () => {
   );
 };
 
-export default LatihanSoal;
+export default Tryout;
