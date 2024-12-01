@@ -5,12 +5,15 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Kurikulum Belajar</h3>
-          <p>Materi Dan Modul Belajar K13</p>
+        <p>
+      <a href="https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Biologi-BS-KLS-XI.pdf" target="_blank">Unduh Buku Biologi Kelas XI Kurikulum 2013</a></p>
+      <p>&copy; 2024 Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi</p>
+      <p>Buku ini disusun sebagai sumber pembelajaran utama siswa SMA/MA, dilengkapi dengan penjelasan yang mendalam dan gambar ilustratif.</p>
+      <p class="description"></p>
         </div>
         <div className="footer-section">
           <h3>Kontak</h3>
-          <p>Email: info@BiologyLibretext.com</p>
+          <p>Email: info@BIONIK.com</p>
           <p>Telepon: (021) 1234-5678</p>
         </div>
         <div className="footer-section">
@@ -23,7 +26,8 @@ function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Biology. Libretexts.</p>
+      <p>Kunjungi portal resmi <a href="https://buku.kemdikbud.go.id" target="_blank">buku.kemdikbud.go.id</a> untuk lebih banyak sumber daya pendidikan.</p>
+        <p>&copy; 2024 BIONIK TEAM 5. BIONIK</p>
       </div>
     </footer>
   );
