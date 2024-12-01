@@ -22,7 +22,7 @@ import LatihanSoal5 from './pages/LatihanSoal5.js';
 import LatihanSoal6 from "./pages/LatihanSoal6";
 import LatihanSoal7 from "./pages/LatihanSoal7";
 import LatihanSoal8 from "./pages/LatihanSoal8";
-import VideoMateri from './pages/VideoMateri';
+import VideoMateri from "./pages/VideoMateri.js";
 
 function App() {
   return (
