@@ -5,7 +5,7 @@ const VideoMateri = () => {
   const videoList = [
     {
       id: 1,
-      title: "Menjelajah Sel",
+      title: "Bab 1 : Menjelajah Sel",
       description: "Menjelajahi Sel Lebih Dalam",
       videoUrl: (
         <iframe
@@ -20,7 +20,7 @@ const VideoMateri = () => {
     },
     {
       id: 2,
-      title: "Pergerakan Zat melalui Membran Sel",
+      title: "Bab 2 : Pergerakan Zat melalui Membran Sel",
       description: "Mempelajari Pergerakan Zat",
       videoUrl: (
         <iframe
@@ -35,7 +35,7 @@ const VideoMateri = () => {
     },
     {
       id: 3,
-      title: "Proses Pengaturan pada Tumbuhan",
+      title: "Bab 3 : Proses Pengaturan pada Tumbuhan",
       description: "Proses Pengaturan pada Tumbuhan",
       videoUrl: (
         <iframe
@@ -50,7 +50,7 @@ const VideoMateri = () => {
     },
     {
       id: 4,
-      title: "Transpor dan Pertukaran Zat pada Manusia",
+      title: "Bab 4 : Transpor dan Pertukaran Zat pada Manusia",
       description: "Mengupas Proses Transpor pada Manusia",
       videoUrl: (
         <iframe
@@ -65,7 +65,7 @@ const VideoMateri = () => {
     },
     {
       id: 5,
-      title: "Sistem Pertahanan Tubuh terhadap Penyakit",
+      title: "Bab 5 : Sistem Pertahanan Tubuh terhadap Penyakit",
       description: "Mengenal Sistem Pertahanan Tubuh",
       videoUrl: (
         <iframe
@@ -80,7 +80,7 @@ const VideoMateri = () => {
     },
     {
       id: 6,
-      title: "Mobilitas pada Manusia",
+      title: "Bab 6 : Mobilitas pada Manusia",
       description: "Mempelajari Mobilitas pada Manusia.",
       videoUrl: (
         <iframe
@@ -95,7 +95,7 @@ const VideoMateri = () => {
     },
     {
       id: 7,
-      title: "Hormon dalam Reproduksi Manusia",
+      title: "Bab 7 : Hormon dalam Reproduksi Manusia",
       description: "Peran Hormon dalam Reproduksi",
       videoUrl: (
         <iframe
@@ -110,7 +110,7 @@ const VideoMateri = () => {
     },
     {
       id: 8,
-      title: "Tumbuh kembang Makhluk Hidup",
+      title: " Bab 8 : Tumbuh kembang Makhluk Hidup",
       description: "Faktor Tumbuh Kembang Makhluk Hidup",
       videoUrl: (
         <iframe
