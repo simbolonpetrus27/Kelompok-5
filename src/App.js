@@ -54,7 +54,7 @@ function App() {
         <Route path="/latihansoal6" element={<LatihanSoal6 />} />
         <Route path="/latihansoal7" element={<LatihanSoal7 />} />
         <Route path="/latihansoal8" element={<LatihanSoal8 />} />
-        <Route path="/vidio" element={<VideoMateri />} />
+        <Route path="/vidioMateri" element={<VideoMateri />} />
       </Routes>
       <Footer />
     </Router>
