@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Tryout.css";
+import "./tryout.css";
 
 
 const Tryout = () => {
