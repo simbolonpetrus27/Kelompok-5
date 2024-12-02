@@ -1,7 +1,7 @@
 .video-materials {
   font-family: Arial, sans-serif;
   padding: 40px 20px; /* Menambahkan padding lebih untuk jarak lebih besar */
-  background-color: #f4f4f9;
+  background:linear-gradient(to right, rgb(181, 237, 181),white,rgb(182, 251, 182));
   color: #333;
   margin-top: 40px; /* Memberikan jarak ke atas */
 }
