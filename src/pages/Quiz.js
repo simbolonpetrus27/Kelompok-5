@@ -21,6 +21,7 @@ const Quiz = () => {
         description: "Uji Pemahaman Anda",
         image:
           "https://i.pinimg.com/564x/98/54/78/985478d23ce8bf017cc05406c0c9fa7a.jpg",
+        
       },
     ];
 

@@ -17,8 +17,8 @@ function Navbar() {
       </div>
       <div className="navbar-menu">
         <Link to="/">Home</Link>
-        <Link to="/Vidio-Materi">Video Materi </Link> 
-        <Link to="/quiz">Quiz</Link> 
+        <Link to="/VidioMateri">VideoMateri</Link>
+        <Link to="/quiz">Quiz</Link>
         {isAuthenticated ? (
           <>
             <Link to="/dashboard">Dashboard</Link>
@@ -32,6 +32,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;
