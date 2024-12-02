@@ -1,173 +1,51 @@
-/* Container utama */
-.latihan-soal-container {
-    position: relative;
-    padding: 0 2rem; /* Hapus padding vertikal untuk mencegah overflow */
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    height: 100vh; /* Pastikan sesuai tinggi layar */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  /* Video sebagai background */
-  .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-  }
-  
-  /* Overlay dengan warna transparan */
-  .latihan-soal-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(200, 230, 250, 0.4));
-    z-index: 0;
-    backdrop-filter: blur(5px); /* Efek blur untuk latar */
-    transition: background 0.5s ease-in-out; /* Transisi untuk perubahan overlay */
-  }
-  
-  /* Judul utama */
-  .latihan-soal-container h1 {
-    font-size: 3rem;
-    color: #070606; /* Warna teks putih agar kontras dengan background */
-    margin: 40px ; 
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan agar lebih terlihat */
-    z-index: 2;
-    font-weight: bold;
-    letter-spacing: 1px;
-    background: none;
-  }
-  
-  
-  /* Grid untuk daftar bab */
-  .bab-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 24px;
-    justify-items: center;
-    margin-top: 2rem;
-    z-index: 2;
-  }
-  
-  /* Kartu bab */
-  .bab-card {
-    background: linear-gradient(135deg, #ffffff, #e0f7fa);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    padding: 1.5rem;
-    width: 100%;
-    max-width: 320px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
-    z-index: 2;
-    overflow: hidden;
-    /* Flexbox untuk tata letak elemen */
-    display: flex;
-    flex-direction: column; /* Elemen diatur secara vertikal */
-    justify-content: space-between; /* Ruang di antara elemen atas dan tombol */
-    height: 100%; /* Tinggi penuh kartu */
-  }
-  
-  /* Hover effect */
-  .bab-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    background-color: #ffeb3b; /* Ubah warna saat hover */
-  }
-  
-  /* Judul bab */
-  .bab-card h2 {
-    font-size: 1.6em;
-    color: #2c3e50;
-    margin-bottom: 0.8rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-  
-  /* Deskripsi bab */
-  .bab-card p {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    font-style: italic;
-  }
-  
-  /* Tombol */
-  .bab-card button {
-    background: linear-gradient(90deg, #4CAF50, #45a049);
-    color: white;
-    padding: 12px 18px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .bab-card button:hover {
-    background: linear-gradient(90deg, #45a049, #4CAF50);
-    transform: scale(1.05);
-  }
-  
-  /* Responsivitas */
-  @media (max-width: 768px) {
-    .latihan-soal-container {
-      padding: 2rem;
-    }
-  
-    .latihan-soal-container h1 {
-      font-size: 2.8em;
-    }
-  
-    .bab-list {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .bab-card {
-      padding: 1.2rem;
-    }
-  
-    .bab-card h2 {
-      font-size: 1.4em;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .bab-list {
-      grid-template-columns: 1fr;
-    }
-  
-    .latihan-soal-container {
-      padding: 1.5rem;
-    }
-  
-    .latihan-soal-container h1 {
-      font-size: 2.4em;
-    }
-  
-    .bab-card {
-      padding: 1rem;
-    }
-  
-    .bab-card h2 {
-      font-size: 1.2em;
-    }
-  }
-  
+.video-materials {
+  font-family: Arial, sans-serif;
+  padding: 40px 20px; /* Menambahkan padding lebih untuk jarak lebih besar */
+  background-color: #f4f4f9;
+  color: #333;
+  margin-top: 40px; /* Memberikan jarak ke atas */
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px; /* Menambahkan jarak bawah pada judul */
+  color: #2c7a7b;
+  font-size: 26px; /* Sedikit lebih besar untuk tampilan lebih menarik */
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
+  gap: 30px; /* Memberikan jarak antar item video */
+}
+
+.video-item {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px; /* Menambahkan padding agar konten lebih lapang */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-title {
+  font-size: 20px; /* Meningkatkan ukuran font judul */
+  margin-bottom: 15px;
+  color: #2c7a7b;
+  text-align: center;
+}
+
+.video-description {
+  font-size: 16px; /* Ukuran font deskripsi sedikit lebih besar */
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center;
+}
+
+.video-frame {
+  width: 100%;
+  height: 315px; /* Menetapkan tinggi yang konsisten untuk video */
+  border-radius: 8px;
+  overflow: hidden;
+}
