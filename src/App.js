@@ -14,7 +14,7 @@ import Bab5 from './pages/bab5';
 import Bab6 from './pages/bab6';
 import Bab7 from './pages/bab7';
 import Bab8 from './pages/bab8';
-import Tryout from './pages/Tryout';
+import Tryout from './pages/tryout';
 import LatihanSoal from "./pages/latihansoal";
 import LatihanSoal1 from "./pages/LatihanSoal1";
 import LatihanSoal2 from "./pages/LatihanSoal2";
