@@ -1,14 +1,14 @@
 /* Container untuk section utama */
 .featured-section {
-  background-image: url('/public/hijau.jpg'); /* Ganti dengan path gambar Anda */
+  background-image: url('/public/hijau.jpg'); 
   background-size: cover; 
   background-position: center; 
-  background-color: rgba(0, 0, 0, 0.5); /* Tambahkan transparansi */
-  background-blend-mode: overlay; /* Kombinasikan transparansi dengan gambar */
+  background-color: rgba(0, 0, 0, 0.5); 
+  background-blend-mode: overlay; 
   min-height: 100vh;
 }
 
-/* Container internal */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -51,7 +51,7 @@
 /* Gambar di dalam kartu */
 .featured-image {
   position: relative;
-  height: 230px; /* Tinggi tetap */
+  height: 230px; 
   overflow: hidden;
 }
 
@@ -92,10 +92,8 @@
   line-height: 1.6; 
 }
 
-
-/* Tombol eksplorasi */
 .explore-btn {
-  background: linear-gradient(90deg, #72dfac, #2f981c); /* Gradasi warna */
+  background: linear-gradient(90deg, #72dfac, #2f981c); 
   color: white;
   border: none;
   padding: 0.8rem 2rem;
@@ -105,8 +103,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover pada tombol */
 .explore-btn:hover {
-  transform: scale(1.05); /* Membesar sedikit */
+  transform: scale(1.05); 
   box-shadow: 0 5px 15px rgba(38, 117, 252, 0.5);
 }

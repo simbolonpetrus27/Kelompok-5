@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate untuk navigasi
+import { useNavigate } from "react-router-dom"; 
 import "./Quiz.css";
 
 const Quiz = () => {
@@ -21,7 +21,6 @@ const Quiz = () => {
         description: "Uji Pemahaman Anda",
         image:
           "https://i.pinimg.com/564x/98/54/78/985478d23ce8bf017cc05406c0c9fa7a.jpg",
-        
       },
     ];
 
@@ -31,20 +30,20 @@ const Quiz = () => {
   const handleExploreClick = (id) => {
     if (id === 5) {
       navigate("/latihansoal"); 
+    } else if (id === 6) {
+      navigate("/tryout"); 
     }
-   
   };
 
   return (
     <div className="featured-section">
       <div className="container">
-        <h2>Uji Kompetensi Anda !</h2>
+        <h2>Uji Kompetensi Anda!</h2>
         <div className="featured-grid">
           {featured.map((item) => (
             <div key={item.id} className="featured-card">
               <div className="featured-image">
                 <img src={item.image} alt={item.name} />
-               
               </div>
               <div className="featured-content">
                 <h3>{item.name}</h3>
