@@ -1,34 +1,139 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./VideoMateri.css";
 
-
 const VideoMateri = () => {
-  const navigate = useNavigate();
-
-  const babList = [
-    { id: 1, title: "Bab 1", description: "Struktur dan Fungsi Sel", link: "/VideoMateri1" },
-    { id: 2, title: "Bab 2", description: "Pergerakan Zat melalui Membran sel", link: "/VidepMateri2" },
-    { id: 3, title: "Bab 3", description: "Proses Pengaturan pada Tumbuhan", link: "/VideoMateri3" },
-    { id: 4, title: "Bab 4", description: "Transpor dan Pertukaran Zat pada Manusia", link: "/VideoMateri4" },
-    { id: 5, title: "Bab 5", description: "Sistem Pertahanan Tubuh terhadap Penyakit", link: "/VideoMateri5" },
-    { id: 6, title: "Bab 6", description: "Mobilitas pada Manusia", link: "/VideoMateri6" },
-    { id: 7, title: "Bab 7", description: "Hormon dalam Reproduksi Manusia", link: "/VideoMateri7" },
-    { id: 8, title: "Bab 8", description: "Tumbuh Kembang Makhluk Hidup", link: "/VideoMateri8" },
+  const videoList = [
+    {
+      id: 1,
+      title: "Menjelajah Sel",
+      description: "Menjelajahi Sel Lebih Dalam",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/Xxm6xtjsFx0?si=uoMgVaGJGH0hr2_Y"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 2,
+      title: "Pergerakan Zat melalui Membran Sel",
+      description: "Mempelajari Pergerakan Zat",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/vDFBJmSH4fs?si=Ma3TwiinnlBmHCm2"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 3,
+      title: "Proses Pengaturan pada Tumbuhan",
+      description: "Proses Pengaturan pada Tumbuhan",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/f7uAhLJba6g?si=jNdfRBVDy-M8vBUs"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 4,
+      title: "Transpor dan Pertukaran Zat pada Manusia",
+      description: "Mengupas Proses Transpor pada Manusia",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/dxRESjSNKV8?si=htCdaU8EWGgPEFLS"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 5,
+      title: "Sistem Pertahanan Tubuh terhadap Penyakit",
+      description: "Mengenal Sistem Pertahanan Tubuh",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/aEqiCz00_Zs?si=WpUt6AHvqPST0G7n"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 6,
+      title: "Mobilitas pada Manusia",
+      description: "Mempelajari Mobilitas pada Manusia.",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/sZFCYvLwsVk?si=L6QoUozIuPasPbj9"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 7,
+      title: "Hormon dalam Reproduksi Manusia",
+      description: "Peran Hormon dalam Reproduksi",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/0QpjmNAsjow?si=e3BKpPrREStq0YNh"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
+    {
+      id: 8,
+      title: "Tumbuh kembang Makhluk Hidup",
+      description: "Faktor Tumbuh Kembang Makhluk Hidup",
+      videoUrl: (
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/qflTCWocfbQ?si=WyZIYkIzTJRq9f12"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      ),
+    },
   ];
 
   return (
-    <div className="Video-Materi-container">
-      <video className="video-background" autoPlay loop muted>
-        <source src="background.mp4" type="video/mp4" />
-      </video>
-      <h1>Pelajari sistem pernapasan manusia secara lengkap melalui video ini!</h1>
-      <div className="bab-list">
-        {babList.map((bab) => (
-          <div key={bab.id} className="bab-card">
-            <h2>{bab.title}</h2>
-            <p>{bab.description}</p>
-            <button onClick={() => navigate(bab.link)}>Tonton Video</button>
+    <div className="video-materials">
+      <h1 className="title">Kumpulan Video Materi</h1>
+      <div className="video-list">
+        {videoList.map((video) => (
+          <div key={video.id} className="video-item">
+            <h2 className="video-title">{video.title}</h2>
+            <p className="video-description">{video.description}</p>
+            <div className="video-frame">{video.videoUrl}</div>
           </div>
         ))}
       </div>
