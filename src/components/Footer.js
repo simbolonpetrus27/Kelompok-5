@@ -10,13 +10,13 @@ function Footer() {
 
       
           <div className="social-links">
-            <a href="https://www.facebook.com/kemdikbud.ri" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/pustekkom" target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook.png" alt="Facebook" />
             </a>
-            <a href="https://www.instagram.com/kemdikbud.ri/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/kemendikdasmen?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/ios-filled/30/ffffff/instagram.png" alt="Instagram" />
             </a>
-            <a href="https://twitter.com/Kemdikbud_RI" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Kemdikdasmen" target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/ios-filled/30/ffffff/twitter.png" alt="Twitter" />
             </a>
           </div>
