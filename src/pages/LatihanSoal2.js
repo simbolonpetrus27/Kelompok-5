@@ -8,6 +8,7 @@ const LatihanSoal2 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(180);
 
   const questions = [
     {
@@ -67,6 +68,8 @@ const LatihanSoal2 = () => {
                 ]
 
   const currentQuestion = questions[currentQuestionIndex];
+
+  
 
   const handleAnswerClick = (option) => {
     const updatedAnswers = [...answers];
