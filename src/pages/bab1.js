@@ -129,6 +129,16 @@ const Bab1 = () => {
         </ul>
         <img src="bab1.9.jpg" alt="Kelainan Sel" className="section-image" />
       </section>
+      <div className="bottom-container">
+        <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
+        Siap mulai?"</h2>
+        <button 
+          className="btn-latihan"
+          onClick={() => window.location.href = "/latihansoal1"}
+        >
+          Mulai Latihan Soal
+        </button>
+      </div>
     </div>
   );
 };

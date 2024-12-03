@@ -182,7 +182,16 @@ const Bab7 = () => {
           Uretra adalah saluran yang mengeluarkan sperma dan urin dari tubuh melalui penis.
         </p>
       </section>
-
+      <div className="bottom-container">
+        <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
+        Siap mulai?"</h2>
+        <button 
+          className="btn-latihan"
+          onClick={() => window.location.href = "/latihansoal1"}
+        >
+          Mulai Latihan Soal
+        </button>
+      </div>
     </div>
   );
 };

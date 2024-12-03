@@ -248,6 +248,16 @@ const Bab6 = () => {
             lenyapnya koordinasi otot. Merokok, kolestrol tinggi, diabetes, penuaan, 
             dan kelainan turunan adalah faktor utama penyebab stroke.</p>
       </section>
+      <div className="bottom-container">
+        <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
+        Siap mulai?"</h2>
+        <button 
+          className="btn-latihan"
+          onClick={() => window.location.href = "/latihansoal1"}
+        >
+          Mulai Latihan Soal
+        </button>
+      </div>
     </div>
     
   );

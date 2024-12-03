@@ -151,6 +151,16 @@ const Bab5 = () => {
                     Beberapa di antaranya memiliki gejala serupa, seperti kelelahan, nyeri 
                     otot, dan demam.</p>
       </section>
+      <div className="bottom-container">
+        <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
+        Siap mulai?"</h2>
+        <button 
+          className="btn-latihan"
+          onClick={() => window.location.href = "/latihansoal1"}
+        >
+          Mulai Latihan Soal
+        </button>
+      </div>
     </div>
     
   );

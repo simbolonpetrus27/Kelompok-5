@@ -136,3 +136,40 @@ section:hover {
   outline: none;
   box-shadow: 0 0 12px rgba(250, 200, 50, 0.8), 0 0 20px rgba(250, 200, 50, 0.5);
 }
+.bottom-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eafaf1;
+  border-top: 2px solid #2ecc71;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-container h2 {
+  font-size: 1.5rem;
+  color: #16a085;
+  margin-bottom: 20px;
+}
+
+.btn-latihan {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-latihan:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+.btn-latihan:active {
+  transform: scale(0.95);
+}
+

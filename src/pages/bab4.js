@@ -204,6 +204,16 @@ terutama kadar air dan zat sisa metabolisme.</p>
           fungsi dalam mengatur pertukaran zat</p>
         <img src="bab4.9.png" alt="Kelainan Pertukaran Zat" className="section-image" />
       </section>
+      <div className="bottom-container">
+        <h2>"Yuk, uji pemahamanmu dengan latihan soal! <br/>
+        Siap mulai?"</h2>
+        <button 
+          className="btn-latihan"
+          onClick={() => window.location.href = "/latihansoal1"}
+        >
+          Mulai Latihan Soal
+        </button>
+      </div>
     </div>
   );
 };
