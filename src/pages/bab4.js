@@ -209,7 +209,7 @@ terutama kadar air dan zat sisa metabolisme.</p>
         Siap mulai?"</h2>
         <button 
           className="btn-latihan"
-          onClick={() => window.location.href = "/latihansoal1"}
+          onClick={() => window.location.href = "/latihansoal4"}
         >
           Mulai Latihan Soal
         </button>

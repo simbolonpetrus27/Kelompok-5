@@ -18,7 +18,7 @@ const LatihanSoal3 = () => {
         { label: "C.Proses fotosintesis yang terjadi pada tumbuhan. ", value: "C" },
         { label: "D. Proses pengaturan suhu tubuh pada tumbuhan.", value: "D" },
       ],
-      explanation: "",
+      explanation: "Pengaturan pada tumbuhan melibatkan proses adaptasi terhadap perubahan lingkungan untuk menjaga keseimbangan internal tumbuhan",
     },
     {
         question: "Apa peran hormon auksin dalam tumbuhan?",
