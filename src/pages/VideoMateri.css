@@ -31,7 +31,7 @@
 
 .video-title {
   font-size: 20px; /* Meningkatkan ukuran font judul */
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
   color: #2c7a7b;
   text-align: center;
 }
@@ -48,4 +48,55 @@
   height: 315px; /* Menetapkan tinggi yang konsisten untuk video */
   border-radius: 8px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .video-list {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+  }
+
+  .video-materials {
+    padding: 20px 10px; 
+  }
+
+  .title {
+    font-size: 22px; 
+    margin-bottom: 30px;
+  }
+
+  .video-title {
+    font-size: 18px; 
+  }
+
+  .video-description {
+    font-size: 14px; 
+  }
+
+  .video-frame {
+    height: 200px; 
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .video-list {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; 
+  }
+
+  .video-materials {
+    padding: 30px 15px;
+  }
+
+  .title {
+    font-size: 24px; 
+  }
+
+  .video-title {
+    font-size: 19px;
+  }
+
+  .video-description {
+    font-size: 15px;
+  }
 }

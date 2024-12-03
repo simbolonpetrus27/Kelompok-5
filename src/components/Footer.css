@@ -87,3 +87,62 @@
   color: #16a085;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: 100%; /* Agar elemen menyesuaikan lebar perangkat */
+  }
+
+  .social-links a {
+    margin: 5px;
+  }
+
+  .footer-bottom {
+    font-size: 16px;
+  }
+
+  .footer-bottom a {
+    font-size: 14px;
+  }
+}
+
+/* Responsif untuk perangkat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-section h3 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 12px;
+  }
+
+  .social-links img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .contact-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom a {
+    font-size: 12px;
+  }
+}

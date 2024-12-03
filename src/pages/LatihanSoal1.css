@@ -74,4 +74,29 @@
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 480px) {
+    .latihan-soal1-question-box {
+      margin: 20px;
+      padding: 10px;
+      max-width: 100%;
+    }
   
+    .latihan-soal1-title {
+      font-size: 2rem;
+    }
+  
+    .latihan-soal1-question p {
+      font-size: 14px;
+    }
+  
+    .latihan-soal1-answer-button {
+      padding: 8px;
+      font-size: 0.8rem;
+    }
+  
+    .latihan-soal1-navigation-buttons {
+      flex-direction: column;
+      gap: 10px; /* Berikan jarak antar tombol */
+      align-items: center;
+    }
+  }

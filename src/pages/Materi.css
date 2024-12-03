@@ -154,3 +154,66 @@
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .biology-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Kurangi ukuran kartu */
+  }
+
+  .biologi-biology-card {
+    max-width: 250px;
+  }
+
+  .card-image {
+    height: 200px; /* Sesuaikan untuk layar kecil */
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+  }
+
+  .card-content p {
+    font-size: 0.85rem;
+  }
+
+  .detail-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Responsif untuk perangkat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .biology-grid {
+    gap: 1rem;
+  }
+
+  .biologi-biology-card {
+    max-width: 200px;
+  }
+
+  .card-image {
+    height: 180px;
+  }
+
+  .card-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .card-content p {
+    font-size: 0.8rem;
+  }
+
+  .detail-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

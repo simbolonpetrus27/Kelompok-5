@@ -7,7 +7,7 @@
   background-color: white;
   position: relative;
   padding-top: 50px;
-  background:  #ffffff ;
+  background:  linear-gradient(to right, rgb(188, 237, 188), rgb(238, 231, 231),rgb(188, 244, 188)) ;
 }
 
 .register-box {
@@ -112,5 +112,65 @@ button:hover {
   }
   100% {
     box-shadow: 0 0 5px rgba(66, 245, 164, 0.5);
+  }
+}
+@media (max-width: 768px) {
+  .register-box {
+    padding: 1.5rem;
+    max-width: 90%;
+    animation: none; /* Menonaktifkan animasi glowing pada layar medium */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle-container {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .form-group input {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
+
+/* Responsif untuk perangkat kecil (max-width: 480px) */
+@media (max-width: 480px) {
+  .register-box {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtitle-container {
+    font-size: 1rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
+
+  .form-group input {
+    font-size: 0.8rem;
+    padding: 0.7rem;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 0.6rem;
+  }
+
+  .register-link-container {
+    font-size: 0.9rem;
+    padding: 0.8rem;
   }
 }
