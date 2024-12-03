@@ -1,6 +1,10 @@
 import './Footer.css';
 
 function Footer() {
+  const handleContactClick = () => {
+    window.open("https://www.instagram.com/it.del?igsh=MW56YWkwaTVsb3d6", "_blank");
+  };
+
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -8,7 +12,6 @@ function Footer() {
           <h3>Gabung Bersama Kami</h3>
           <p>Ikuti terus pembaruan informasi tentang Biologi Kelas XI </p>
 
-      
           <div className="social-links">
             <a href="https://www.facebook.com/pustekkom" target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/ios-filled/30/ffffff/facebook.png" alt="Facebook" />
@@ -33,12 +36,15 @@ function Footer() {
           <p>Alamat: Kampus IT DEL LAGUBOTI,SUMATERA UTARA</p>
           <p>Email: info@bionik.com</p>
           <p>Telepon: (021) 1234-5678</p>
-          <button className="contact-button">Hubungi Kami</button>
+          <button className="contact-button" onClick={handleContactClick}>
+            Hubungi Kami
+          </button>
         </div>
       </div>
       <div className="footer-bottom">
         <p>&copy; 2024 BIONIK Team 5 PSW 1.</p>
         <p>Kunjungi <a href="https://buku.kemdikbud.go.id" target="_blank">buku.kemdikbud.go.id</a> untuk informasi lainnya.</p>
+        <p>Kunjungi <a href="https://www.youtube.com/@GIAAcademy" target="_blank">Vidio Materi selengkapnya </a> untuk informasi lainnya.</p>
       </div>
     </footer>
   );

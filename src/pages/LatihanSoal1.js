@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./LatihanSoal1.css";
 
 const LatihanSoal1 = () => {
@@ -8,6 +8,7 @@ const LatihanSoal1 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(180); // 180 detik (3 menit)
 
   const questions = [
     {
@@ -18,7 +19,8 @@ const LatihanSoal1 = () => {
         { label: "C. Menyintesis protein", value: "C" },
         { label: "D. Menghasilkan energi", value: "D" },
       ],
-      explanation: "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel.",
+      explanation:
+        "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel.",
     },
     {
       question: "Dimana sel-sel spermatzoa dimatangkan?",
@@ -64,9 +66,20 @@ const LatihanSoal1 = () => {
         explanation:
           "Meiosis menghasilkan sel-sel germinal (sel telur dan sperma) dengan jumlah kromosom setengah dari sel induknya, yang memungkinkan terjadinya rekombinasi genetik dan memastikan variasi genetik pada keturunan. Proses ini penting untuk mempertahankan keanekaragaman genetik dalam populasi."
       },
-  ];
+    ];
+    
 
   const currentQuestion = questions[currentQuestionIndex];
+
+  // Menghitung waktu mundur
+  useEffect(() => {
+    if (timeLeft > 0 && !isFinished) {
+      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
+      return () => clearTimeout(timer);
+    } else if (timeLeft === 0) {
+      setIsFinished(true); // Waktu habis, selesai quiz
+    }
+  }, [timeLeft, isFinished]);
 
   const handleAnswerClick = (option) => {
     const updatedAnswers = [...answers];
@@ -99,6 +112,18 @@ const LatihanSoal1 = () => {
     setIsFinished(true);
   };
 
+  const handleRestartQuiz = () => {
+    setAnswers([]);
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setTimeLeft(180); 
+    setIsFinished(false);
+  };
+
+  const handleNextExercise = () => {
+    alert("./latihan2");
+  };
+
   if (isFinished) {
     return (
       <div className="latihan-soal1-container">
@@ -106,15 +131,34 @@ const LatihanSoal1 = () => {
           <h1 className="latihan-soal1-title">Mode Bionik</h1>
           <h2>Quiz Selesai!</h2>
           <p>Skor Anda: {score}/{questions.length}</p>
+
+          <div className="latihan-soal1-finish-buttons">
+            <button className="finish-button" onClick={handleRestartQuiz}>
+              Ulangi Latihan
+            </button>
+            <button className="finish-button" onClick={handleNextExercise}>
+              Lanjut Latihan Berikutnya
+            </button>
+          </div>
         </div>
       </div>
     );
   }
 
+  // Format waktu (menit:detik)
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
+  };
+
   return (
     <div className="latihan-soal1-container">
       <div className="latihan-soal1-question-box">
         <h1 className="latihan-soal1-title">Mode Bionik</h1>
+        <div className="latihan-soal1-timer">
+          <p>Waktu Tersisa: {formatTime(timeLeft)}</p>
+        </div>
         <div className="latihan-soal1-question">
           <h2>
             Soal Nomor {currentQuestionIndex + 1}/{questions.length}
@@ -126,7 +170,9 @@ const LatihanSoal1 = () => {
             <button
               key={index}
               className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""
+                answers[currentQuestionIndex] === option.value
+                  ? "latihan-soal1-selected-answer"
+                  : ""
               }`}
               onClick={() => handleAnswerClick(option)}
               disabled={answers[currentQuestionIndex]}
@@ -141,7 +187,9 @@ const LatihanSoal1 = () => {
             <h3>
               {isCorrect
                 ? "Jawaban Anda Benar!"
-                : `Jawaban Benar: ${currentQuestion.options.find((opt) => opt.isCorrect)?.value}`}
+                : `Jawaban Benar: ${
+                    currentQuestion.options.find((opt) => opt.isCorrect)?.value
+                  }`}
             </h3>
             <p>{currentQuestion.explanation}</p>
           </div>
@@ -156,9 +204,15 @@ const LatihanSoal1 = () => {
           </button>
           <button
             className="nav-button next"
-            onClick={currentQuestionIndex === questions.length - 1 ? handleFinishQuiz : goToNextQuestion}
+            onClick={
+              currentQuestionIndex === questions.length - 1
+                ? handleFinishQuiz
+                : goToNextQuestion
+            }
           >
-            {currentQuestionIndex === questions.length - 1 ? "Selesai" : "Soal Selanjutnya →"}
+            {currentQuestionIndex === questions.length - 1
+              ? "Selesai"
+              : "Soal Selanjutnya →"}
           </button>
         </div>
       </div>
