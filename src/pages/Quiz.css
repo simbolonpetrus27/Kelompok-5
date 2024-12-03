@@ -107,3 +107,56 @@
   transform: scale(1.05); 
   box-shadow: 0 5px 15px rgba(38, 117, 252, 0.5);
 }
+
+
+@media (max-width: 768px) {
+  .featured-section h2 {
+    font-size: 2rem; 
+    margin: 2rem 0;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 1rem; 
+  }
+
+  .featured-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .featured-image {
+    height: 180px; 
+  }
+
+  .featured-content h3 {
+    font-size: 1.2rem; 
+  }
+
+  .featured-content p {
+    font-size: 0.9rem; 
+  }
+
+  .explore-btn {
+    font-size: 0.9rem; 
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .featured-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .featured-grid {
+    gap: 1.5rem;
+  }
+
+  .featured-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .featured-content p {
+    font-size: 1rem;
+  }
+}

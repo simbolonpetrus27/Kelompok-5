@@ -28,7 +28,7 @@ const LatihanSoal = () => {
           <div key={bab.id} className="bab-card">
             <h2>{bab.title}</h2>
             <p>{bab.description}</p>
-            <button onClick={() => navigate(bab.link)}>Kerjakan Soal</button>
+            <button onClick={() => navigate(bab.link)}>Mulai Latihan</button>
           </div>
         ))}
       </div>

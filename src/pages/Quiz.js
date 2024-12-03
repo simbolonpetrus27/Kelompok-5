@@ -52,7 +52,7 @@ const Quiz = () => {
                   className="explore-btn"
                   onClick={() => handleExploreClick(item.id)}
                 >
-                  Jelajahi
+                  Kerjakan
                 </button>
               </div>
             </div>
