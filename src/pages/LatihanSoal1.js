@@ -8,7 +8,7 @@ const LatihanSoal1 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(180); // 180 detik (3 menit)
+  const [timeLeft, setTimeLeft] = useState(180); 
 
   const questions = [
     {
@@ -71,15 +71,6 @@ const LatihanSoal1 = () => {
 
   const currentQuestion = questions[currentQuestionIndex];
 
-  // Menghitung waktu mundur
-  useEffect(() => {
-    if (timeLeft > 0 && !isFinished) {
-      const timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
-      return () => clearTimeout(timer);
-    } else if (timeLeft === 0) {
-      setIsFinished(true); // Waktu habis, selesai quiz
-    }
-  }, [timeLeft, isFinished]);
 
   const handleAnswerClick = (option) => {
     const updatedAnswers = [...answers];
@@ -136,34 +127,19 @@ const LatihanSoal1 = () => {
             <button className="finish-button" onClick={handleRestartQuiz}>
               Ulangi Latihan
             </button>
-            <button className="finish-button" onClick={handleNextExercise}>
-              Lanjut Latihan Berikutnya
-            </button>
           </div>
         </div>
       </div>
     );
   }
 
-  // Format waktu (menit:detik)
-  const formatTime = (seconds) => {
-    const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = seconds % 60;
-    return `${minutes}:${remainingSeconds < 10 ? "0" : ""}${remainingSeconds}`;
-  };
-
   return (
     <div className="latihan-soal1-container">
       <div className="latihan-soal1-question-box">
         <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-timer">
-          <p>Waktu Tersisa: {formatTime(timeLeft)}</p>
-        </div>
+        <div className="latihan-soal1-timer"></div>
         <div className="latihan-soal1-question">
-          <h2>
-            Soal Nomor {currentQuestionIndex + 1}/{questions.length}
-          </h2>
-          <p>{currentQuestion.question}</p>
+       <p>{currentQuestion.question}</p>
         </div>
         <div className="latihan-soal1-answers">
           {currentQuestion.options.map((option, index) => (
@@ -221,3 +197,10 @@ const LatihanSoal1 = () => {
 };
 
 export default LatihanSoal1;
+
+
+
+
+
+
+
