@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './bab4.css';
 
 const Bab4 = () => {
+  const navigate = useNavigate();
   return (
     <div className="bab4-container">
       <h1>Bab 4: Sistem Sirkulasi dan Pertukaran Zat</h1>
@@ -212,6 +214,21 @@ terutama kadar air dan zat sisa metabolisme.</p>
           onClick={() => window.location.href = "/latihansoal4"}
         >
           Mulai Latihan Soal
+        </button>
+      </div>
+       {/* Navigasi Halaman */}
+   <div className="navigation-container">
+        <button 
+          className="btn-navigate"
+          onClick={() => navigate("/bab3")}
+        >
+          Kembali ke Bab Sebelumnya
+        </button>
+        <button 
+          className="btn-navigate"
+          onClick={() => navigate("/bab5")}
+        >
+          Lanjut ke Bab Selanjutnya
         </button>
       </div>
     </div>
