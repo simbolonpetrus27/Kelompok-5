@@ -28,8 +28,8 @@ function Login() {
       formData.password === savedUser.password
     ) {
       alert('Login successful!');
-      localStorage.setItem('isLoggedIn', 'true'); 
-      navigate('/'); 
+      localStorage.setItem('isLoggedIn', 'true'); // Menandakan login berhasil
+      navigate('/tryout'); //  ke halaman tryout
     } else {
       setError('Invalid email or password');
     }
@@ -38,9 +38,9 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-      <div className="subtitle-container">
-  <h1 className="subtitle">LOGIN</h1>
-</div>
+        <div className="subtitle-container">
+          <h1 className="subtitle">LOGIN</h1>
+        </div>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
@@ -66,11 +66,11 @@ function Login() {
             />
           </div>
           <button type="submit" className="login-button">Login</button>
-      </form>
-      <div className="login-link-container">
+        </form>
+        <div className="login-link-container">
           <p className="login-link">
             Don't have an account? <a href="/register">Register Here</a>
-            </p>
+          </p>
         </div>
       </div>
     </div>
