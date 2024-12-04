@@ -162,6 +162,6 @@ const Bab2 = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Bab2;
