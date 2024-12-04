@@ -100,15 +100,25 @@ const LatihanSoal5 = () => {
     setIsFinished(true);
   };
 
+  const resetQuiz = () => {
+    setAnswers([]);
+    setIsAnswered(false);
+    setIsCorrect(false);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setIsFinished(false);
+  };
+
   if (isFinished) {
     return (
       <div className="latihan-soal1-container">
         <div className="latihan-soal1-question-box">
           <h1 className="latihan-soal1-title">Mode Bionik</h1>
           <h2>Quiz Selesai!</h2>
-          <p>
-            Skor Anda: {score}/{questions.length}
-          </p>
+          <p>Skor Anda: {score}/{questions.length} </p>
+          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
+          Ulangi Latihan
+        </button>
         </div>
       </div>
     );

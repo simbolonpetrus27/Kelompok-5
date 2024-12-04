@@ -8,68 +8,62 @@ const LatihanSoal2 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(180);
 
   const questions = [
     {
       question: "Apa yang dimaksud dengan transportasi pasif dalam pergerakan zat pada sel?",
       options: [
-        { label: "A.Pergerakan zat melawan gradien konsentrasi dengan memerlukan energi ", value: "A" },
-        { label: "B.Pergerakan zat tanpa memerlukan energi ", value: "B",isCorrect: true },
-        { label: "C.Pergerakan zat menggunakan vesikel ", value: "C" },
-        { label: "D.Pergerakan zat melalui saluran protein", value: "D" },
+        { label: "A. Pergerakan zat melawan gradien konsentrasi dengan memerlukan energi", value: "A" },
+        { label: "B. Pergerakan zat tanpa memerlukan energi", value: "B", isCorrect: true },
+        { label: "C. Pergerakan zat menggunakan vesikel", value: "C" },
+        { label: "D. Pergerakan zat melalui saluran protein", value: "D" },
       ],
       explanation: "Transportasi pasif adalah pergerakan zat yang tidak memerlukan energi. Zat bergerak mengikuti gradien konsentrasi, dari daerah dengan konsentrasi tinggi ke daerah dengan konsentrasi rendah. Contoh dari transportasi pasif adalah difusi, osmosis, dan fasilitasi difusi.",
     },
+    {
+      question: "Apa yang dimaksud dengan osmosis?",
+      options: [
+        { label: "A. Pergerakan molekul air melalui membran semipermeabel dari konsentrasi air tinggi ke rendah", value: "A", isCorrect: true },
+        { label: "B. Pergerakan molekul air dari daerah dengan konsentrasi rendah ke tinggi", value: "B" },
+        { label: "C. Pergerakan oksigen dari luar sel ke dalam sel", value: "C" },
+        { label: "D. Pergerakan glukosa melalui protein pembawa", value: "D" },
+      ],
+      explanation: "Osmosis adalah pergerakan molekul air melalui membran semipermeabel, yang memungkinkan air bergerak dari daerah dengan konsentrasi air tinggi ke daerah dengan konsentrasi air rendah. Proses ini penting untuk menjaga keseimbangan cairan dalam sel.",
+    },
+    {
+      question: "Manakah dari berikut ini yang memerlukan energi dalam proses transportasi zat melintasi membran sel?",
+      options: [
+        { label: "A. Diffusi", value: "A" },
+        { label: "B. Osmosis", value: "B" },
+        { label: "C. Pompa Natrium-Kalium", value: "C", isCorrect: true },
+        { label: "D. Fasilitasi difusi", value: "D" },
+      ],
+      explanation: "Pompa Natrium-Kalium adalah mekanisme transportasi aktif yang memerlukan energi dalam bentuk ATP. Proses ini memindahkan ion natrium keluar dan ion kalium masuk ke dalam sel, meskipun melawan gradien konsentrasi. Berbeda dengan transportasi pasif yang tidak memerlukan energi.",
+    },
+    {
+      question: "Jika terjadi gangguan pada protein transportasi seperti pada penyakit cystic fibrosis, bagaimana hal ini dapat mempengaruhi pergerakan zat dalam sel?",
+      options: [
+        { label: "A. Molekul air tidak dapat bergerak keluar dari sel ", value: "A" },
+        { label: "B. Proses osmosis terhambat, menyebabkan pembengkakan sel", value: "B" },
+        { label: "C.Transportasi zat penting seperti klorida terganggu ", value: "C", isCorrect: true },
+        { label: "D.Endositosis tidak dapat mengambil zat besar ke dalam sel", value: "D" },
+      ],
+      explanation: "Pada penyakit cystic fibrosis, terdapat mutasi pada protein pembawa yang mengganggu transportasi zat-zat penting seperti ion klorida. Hal ini mengganggu keseimbangan ion dalam sel, yang berakibat pada ketidakseimbangan cairan tubuh dan gangguan dalam fungsi berbagai organ.",
+    },
     
         {
-          question: "Apa yang dimaksud dengan osmosis?",
+          question: "Jika sebuah sel mengalami gangguan dalam mekanisme osmosis, apa yang dapat terjadi pada sel tersebut?",
           options: [
-            { label: "A.Pergerakan molekul air melalui membran semipermeabel dari konsentrasi air tinggi ke rendah ", value: "A", isCorrect: true },
-            { label: "B.Pergerakan molekul air dari daerah dengan konsentrasi rendah ke tinggi ", value: "B" },
-            { label: "C. Pergerakan oksigen dari luar sel ke dalam sel ", value: "C" },
-            { label: "D. Pergerakan glukosa melalui protein pembawa", value: "D" },
+            { label: "A.Sel tidak dapat membentuk vesikel ", value: "A" },
+            { label: "B.Sel akan mengalami pembengkakan atau dehidrasi ", value: "B", isCorrect: true },
+            { label: "C.Sel tidak bisa menyintesis protein ", value: "C" },
+            { label: "D.Sel tidak dapat membentuk membran semipermeabel", value: "D" },
           ],
-          explanation: "Osmosis adalah pergerakan molekul air melalui membran semipermeabel, yang memungkinkan air bergerak dari daerah dengan konsentrasi air tinggi ke daerah dengan konsentrasi air rendah. Proses ini penting untuk menjaga keseimbangan cairan dalam sel.",
+          explanation: "Gangguan pada proses osmosis dapat menyebabkan ketidakseimbangan cairan dalam sel. Jika osmosis tidak berjalan dengan baik, sel bisa mengalami pembengkakan (jika terlalu banyak air masuk) atau dehidrasi (jika air keluar dari sel), yang dapat mengganggu fungsi normal sel.",
         },
-        
-            {
-              question: "Manakah dari berikut ini yang memerlukan energi dalam proses transportasi zat melintasi membran sel?",
-              options: [
-                { label: "A.Diffusi", value: "A" },
-                { label: "B.Osmosis ", value: "B" },
-                { label: "C.Pompa Natrium-Kalium ", value: "C" , isCorrect: true},
-                { label: "D.Fasilitasi difusi", value: "D" },
-              ],
-              explanation: "Pompa Natrium-Kalium adalah mekanisme transportasi aktif yang memerlukan energi dalam bentuk ATP. Proses ini memindahkan ion natrium keluar dan ion kalium masuk ke dalam sel, meskipun melawan gradien konsentrasi. Berbeda dengan transportasi pasif yang tidak memerlukan energi.",
-            },
-            
-                {
-                  question: "Jika terjadi gangguan pada protein transportasi seperti pada penyakit cystic fibrosis, bagaimana hal ini dapat mempengaruhi pergerakan zat dalam sel?",
-                  options: [
-                    { label: "A. Molekul air tidak dapat bergerak keluar dari sel ", value: "A" },
-                    { label: "B. Proses osmosis terhambat, menyebabkan pembengkakan sel", value: "B" },
-                    { label: "C.Transportasi zat penting seperti klorida terganggu ", value: "C", isCorrect: true },
-                    { label: "D.Endositosis tidak dapat mengambil zat besar ke dalam sel", value: "D" },
-                  ],
-                  explanation: "Pada penyakit cystic fibrosis, terdapat mutasi pada protein pembawa yang mengganggu transportasi zat-zat penting seperti ion klorida. Hal ini mengganggu keseimbangan ion dalam sel, yang berakibat pada ketidakseimbangan cairan tubuh dan gangguan dalam fungsi berbagai organ.",
-                },
-                
-                    {
-                      question: "Jika sebuah sel mengalami gangguan dalam mekanisme osmosis, apa yang dapat terjadi pada sel tersebut?",
-                      options: [
-                        { label: "A.Sel tidak dapat membentuk vesikel ", value: "A" },
-                        { label: "B.Sel akan mengalami pembengkakan atau dehidrasi ", value: "B", isCorrect: true },
-                        { label: "C.Sel tidak bisa menyintesis protein ", value: "C" },
-                        { label: "D.Sel tidak dapat membentuk membran semipermeabel", value: "D" },
-                      ],
-                      explanation: "Gangguan pada proses osmosis dapat menyebabkan ketidakseimbangan cairan dalam sel. Jika osmosis tidak berjalan dengan baik, sel bisa mengalami pembengkakan (jika terlalu banyak air masuk) atau dehidrasi (jika air keluar dari sel), yang dapat mengganggu fungsi normal sel.",
-                    },
-                ]
+    ]
 
   const currentQuestion = questions[currentQuestionIndex];
-
-  
 
   const handleAnswerClick = (option) => {
     const updatedAnswers = [...answers];
@@ -102,6 +96,14 @@ const LatihanSoal2 = () => {
     setIsFinished(true);
   };
 
+  const handleRestartQuiz = () => {
+    setAnswers([]);
+    setScore(0);
+    setCurrentQuestionIndex(0);
+    setIsFinished(false);
+    setIsAnswered(false);
+  };
+
   if (isFinished) {
     return (
       <div className="latihan-soal1-container">
@@ -109,6 +111,9 @@ const LatihanSoal2 = () => {
           <h1 className="latihan-soal1-title">Mode Bionik</h1>
           <h2>Quiz Selesai!</h2>
           <p>Skor Anda: {score}/{questions.length}</p>
+          <button className="finish-button" onClick={handleRestartQuiz}>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );
@@ -128,9 +133,7 @@ const LatihanSoal2 = () => {
           {currentQuestion.options.map((option, index) => (
             <button
               key={index}
-              className={`latihan-soal1-answer-button ${
-                answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""
-              }`}
+              className={`latihan-soal1-answer-button ${answers[currentQuestionIndex] === option.value ? "latihan-soal1-selected-answer" : ""}`}
               onClick={() => handleAnswerClick(option)}
               disabled={answers[currentQuestionIndex]}
             >
@@ -170,3 +173,7 @@ const LatihanSoal2 = () => {
 };
 
 export default LatihanSoal2;
+
+
+
+

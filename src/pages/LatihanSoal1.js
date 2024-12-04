@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./LatihanSoal1.css";
 
 const LatihanSoal1 = () => {
@@ -8,7 +8,6 @@ const LatihanSoal1 = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(180); 
 
   const questions = [
     {
@@ -21,6 +20,17 @@ const LatihanSoal1 = () => {
       ],
       explanation:
         "Membran sel berfungsi sebagai penghalang yang mengatur pergerakan zat-zat ke dalam dan keluar dari sel.",
+    },
+    {
+      question: "Dimana sel-sel spermatzoa dimatangkan?",
+      options: [
+        { label: "A. Tubuli seminiferi", value: "A" },
+        { label: "B. Ductus deferens", value: "B" },
+        { label: "C. Epididymis", value: "C", isCorrect: true },
+        { label: "D. Ductus afferens", value: "D" },
+      ],
+      explanation:
+        "Sel-sel spermatzoa diproduksi di dalam tubulus seminiferus testis dan kemudian dipindahkan ke epididymis untuk proses pematangan.",
     },
     {
       question: "Dimana sel-sel spermatzoa dimatangkan?",
@@ -66,11 +76,9 @@ const LatihanSoal1 = () => {
         explanation:
           "Meiosis menghasilkan sel-sel germinal (sel telur dan sperma) dengan jumlah kromosom setengah dari sel induknya, yang memungkinkan terjadinya rekombinasi genetik dan memastikan variasi genetik pada keturunan. Proses ini penting untuk mempertahankan keanekaragaman genetik dalam populasi."
       },
-    ];
-    
+    ]; 
 
   const currentQuestion = questions[currentQuestionIndex];
-
 
   const handleAnswerClick = (option) => {
     const updatedAnswers = [...answers];
@@ -107,12 +115,7 @@ const LatihanSoal1 = () => {
     setAnswers([]);
     setScore(0);
     setCurrentQuestionIndex(0);
-    setTimeLeft(180); 
     setIsFinished(false);
-  };
-
-  const handleNextExercise = () => {
-    alert("./latihan2");
   };
 
   if (isFinished) {
@@ -122,12 +125,9 @@ const LatihanSoal1 = () => {
           <h1 className="latihan-soal1-title">Mode Bionik</h1>
           <h2>Quiz Selesai!</h2>
           <p>Skor Anda: {score}/{questions.length}</p>
-
-          <div className="latihan-soal1-finish-buttons">
-            <button className="finish-button" onClick={handleRestartQuiz}>
-              Ulangi Latihan
-            </button>
-          </div>
+          <button className="finish-button" onClick={handleRestartQuiz}>
+            Ulangi Latihan
+          </button>
         </div>
       </div>
     );
@@ -137,9 +137,8 @@ const LatihanSoal1 = () => {
     <div className="latihan-soal1-container">
       <div className="latihan-soal1-question-box">
         <h1 className="latihan-soal1-title">Mode Bionik</h1>
-        <div className="latihan-soal1-timer"></div>
         <div className="latihan-soal1-question">
-       <p>{currentQuestion.question}</p>
+          <p>{currentQuestion.question}</p>
         </div>
         <div className="latihan-soal1-answers">
           {currentQuestion.options.map((option, index) => (
@@ -197,7 +196,6 @@ const LatihanSoal1 = () => {
 };
 
 export default LatihanSoal1;
-
 
 
 

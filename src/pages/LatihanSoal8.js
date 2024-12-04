@@ -95,6 +95,15 @@ const LatihanSoal = () => {
     setIsFinished(true);
   };
 
+  const resetQuiz = () => {
+    setAnswers([]);
+    setIsAnswered(false);
+    setIsCorrect(false);
+    setCurrentQuestionIndex(0);
+    setScore(0);
+    setIsFinished(false);
+  };
+
   if (isFinished) {
     return (
       <div className="latihan-soal1-container">
@@ -104,6 +113,9 @@ const LatihanSoal = () => {
           <p>
             Skor Anda: {score}/{questions.length}
           </p> 
+          <button className="latihan-soal1-reset-button" onClick={resetQuiz}>
+          Ulangi Latihan
+        </button>
         </div>
       </div>
     );
