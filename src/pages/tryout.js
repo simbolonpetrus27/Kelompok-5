@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; // Tambahkan useEffect di sini
-import { useNavigate } from "react-router-dom"; // Tambahkan useNavigate di sini
+import React, { useState, useEffect } from "react"; 
+import { useNavigate } from "react-router-dom"; 
 import "./tryout.css";
 import Timer from "./Timer";
 import Question from "./Question";
@@ -8,7 +8,7 @@ const Tryout = () => {
   const navigate = useNavigate();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-  // Cek autentikasi saat komponen dimuat
+  
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn) {
