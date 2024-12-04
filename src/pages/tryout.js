@@ -14,7 +14,7 @@ const Tryout = () => {
     if (isLoggedIn) {
       setIsAuthenticated(true);
     } else {
-      alert("Anda harus login terlebih dahulu!");
+      alert("Anda harus melakukan register terlebih dahulu!");
       navigate("/login");
     }
   }, [navigate]);
