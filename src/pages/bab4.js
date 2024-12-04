@@ -216,7 +216,7 @@ terutama kadar air dan zat sisa metabolisme.</p>
           Mulai Latihan Soal
         </button>
       </div>
-       {/* Navigasi Halaman */}
+       
    <div className="navigation-container">
         <button 
           className="btn-navigate"

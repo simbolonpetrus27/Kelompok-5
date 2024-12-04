@@ -1,10 +1,9 @@
-/* Container utama */
 .latihan-soal-container {
   position: relative;
-  padding: 0 2rem; /* Hapus padding vertikal untuk mencegah overflow */
+  padding: 0 2rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  height: 100vh; /* Pastikan sesuai tinggi layar */
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +12,6 @@
   z-index: 1;
 }
 
-/* Video sebagai background */
 .video-background {
   position: absolute;
   top: 0;
@@ -24,7 +22,6 @@
   object-fit: cover;
 }
 
-/* Overlay dengan warna transparan */
 .latihan-soal-container::before {
   content: '';
   position: absolute;
@@ -34,34 +31,30 @@
   height: 100%;
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.8), rgba(200, 230, 250, 0.4));
   z-index: 0;
-  backdrop-filter: blur(5px); /* Efek blur untuk latar */
-  transition: background 0.5s ease-in-out; /* Transisi untuk perubahan overlay */
+  backdrop-filter: blur(5px);
+  transition: background 0.5s ease-in-out;
 }
 
-/* Judul utama */
 .latihan-soal-container h1 {
   font-size: 3rem;
-  color: #070606; /* Warna teks putih agar kontras dengan background */
-  margin: 40px ; 
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan agar lebih terlihat */
+  color: #070606;
+  margin: 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   z-index: 2;
   font-weight: bold;
   letter-spacing: 1px;
   background: none;
 }
 
-
-/* Grid untuk daftar bab */
 .bab-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   justify-items: center;
   margin-top: 2rem;
   z-index: 2;
 }
 
-/* Kartu bab */
 .bab-card {
   background: linear-gradient(135deg, #ffffff, #e0f7fa);
   border-radius: 15px;
@@ -73,21 +66,18 @@
   cursor: pointer;
   z-index: 2;
   overflow: hidden;
-  /* Flexbox untuk tata letak elemen */
   display: flex;
-  flex-direction: column; /* Elemen diatur secara vertikal */
-  justify-content: space-between; /* Ruang di antara elemen atas dan tombol */
-  height: 100%; /* Tinggi penuh kartu */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-/* Hover effect */
 .bab-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #ffeb3b; /* Ubah warna saat hover */
+  background-color: #ffeb3b;
 }
 
-/* Judul bab */
 .bab-card h2 {
   font-size: 1.6em;
   color: #2c3e50;
@@ -97,7 +87,6 @@
   letter-spacing: 0.5px;
 }
 
-/* Deskripsi bab */
 .bab-card p {
   font-size: 1em;
   color: #555;
@@ -106,7 +95,6 @@
   font-style: italic;
 }
 
-/* Tombol */
 .bab-card button {
   background: linear-gradient(90deg, #4CAF50, #45a049);
   color: white;
@@ -126,7 +114,6 @@
   transform: scale(1.05);
 }
 
-/* Responsivitas */
 @media (max-width: 768px) {
   .latihan-soal-container {
     padding: 2rem;
@@ -170,6 +157,3 @@
     font-size: 1.2em;
   }
 }
-
-
-

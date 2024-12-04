@@ -39,6 +39,7 @@ const Tryout = () => {
     { question: "17. Apa nama proses perpindahan molekul air melalui membran?", options: ["Osmosis", "Difusi", "Endositosis", "Eksositosis"], answer: "Osmosis" },
     { question: "18. Apa nama organ reproduksi jantan pada tumbuhan berbunga?", options: ["Benang sari", "Putik", "Kepala sari", "Ovarium"], answer: "Benang sari" },
     { question: "19. Apa yang terjadi pada tanaman jika stomata tertutup terlalu lama?", options: ["Fotosintesis menurun", "Penyerapan air meningkat", "Transpirasi meningkat", "Pertukaran gas meningkat"], answer: "Fotosintesis menurun" },
+    { question: "20. Apa yang dimaksud dengan jaringan meristem?", options: ["Jaringan yang aktif membelah", "Jaringan pelindung", "Jaringan pengangkut", "Jaringan penyokong"],  answer: "Jaringan yang aktif membelah" }
   ];
 
   const [currentQuestion, setCurrentQuestion] = useState(0);

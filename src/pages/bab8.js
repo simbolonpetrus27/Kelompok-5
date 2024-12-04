@@ -106,7 +106,7 @@ const Bab8 = () => {
           Mulai Latihan Soal
         </button>
       </div>
-         {/* Navigasi Halaman */}
+         
    <div className="navigation-container">
         <button 
           className="btn-navigate"
