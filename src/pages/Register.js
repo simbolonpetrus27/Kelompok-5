@@ -35,7 +35,7 @@ function Register() {
     };
 
     localStorage.setItem('user', JSON.stringify(userData));
-    alert(`Registration successful! Welcome, ${formData.name}`); // Perbaikan di sini
+    alert(`Registration successful! Welcome, ${formData.name}`);
     navigate('/login');
   };
 

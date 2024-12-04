@@ -35,7 +35,7 @@
   }
 }
 
-/* Section Styling */
+
 .biologi-biology-section {
   padding: 3rem 0;
   background: #f9f9f9;
@@ -47,7 +47,7 @@
   justify-items: center; /* Kartu di tengah */
 }
 
-/* Kartu */
+
 .biologi-biology-card {
   background: white;
   border-radius: 15px;
@@ -135,7 +135,7 @@
   box-shadow: 0 4px 10px rgba(38, 117, 252, 0.4);
 }
 
-/* Kartu */
+
 .biologi-biology-card {
   background: white;
   border-radius: 15px;
@@ -169,7 +169,7 @@
   }
 
   .card-image {
-    height: 200px; /* Sesuaikan untuk layar kecil */
+    height: 200px; 
   }
 
   .card-content h3 {
@@ -186,7 +186,7 @@
   }
 }
 
-/* Responsif untuk perangkat kecil (max-width: 480px) */
+/* Responsif untuk perangkat kecil  */
 @media (max-width: 480px) {
   .section-header h2 {
     font-size: 1.6rem;
