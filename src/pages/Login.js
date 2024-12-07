@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
@@ -20,18 +21,32 @@ function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const savedUser = JSON.parse(localStorage.getItem('user')); 
 
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError('Masukkan email yang valid');
+      return;
+    }
+
+   
+    if (formData.password.length < 6) {
+      setError('Kata sandi harus memiliki minimal 6 karakter.');
+      return;
+    }
+
+  
+    const savedUser = JSON.parse(localStorage.getItem('user')); 
     if (
       savedUser &&
       formData.email === savedUser.email &&
       formData.password === savedUser.password
     ) {
-      alert('Login successful!');
-      localStorage.setItem('isLoggedIn', 'true'); // Menandakan login berhasil
-      navigate('/tryout'); //  ke halaman tryout
+      alert('Login berhasil! Selamat datang.');
+      localStorage.setItem('isLoggedIn', 'true'); 
+      navigate('/tryout'); 
     } else {
-      setError('Invalid email or password');
+      setError('Email atau kata sandi salah. Silakan coba lagi.');
     }
   };
 
@@ -39,37 +54,35 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="subtitle-container">
-          <h1 className="subtitle">LOGIN</h1>
+          <h1 className="subtitle">MASUK</h1>
         </div>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label>Email:</label>
             <input
-              type="email"
+              type="text"
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email"
-              required
+              placeholder="Masukkan email Anda"
             />
           </div>
           <div className="form-group">
-            <label>Password:</label>
+            <label>Kata Sandi:</label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Enter your password"
-              required
+              placeholder="Masukkan kata sandi Anda"
             />
           </div>
-          <button type="submit" className="login-button">Login</button>
+          <button type="submit" className="login-button">Masuk</button>
         </form>
         <div className="login-link-container">
           <p className="login-link">
-            Don't have an account? <a href="/register">Register Here</a>
+            Belum punya akun? <a href="/register">Daftar di sini</a>
           </p>
         </div>
       </div>

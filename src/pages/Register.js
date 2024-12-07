@@ -23,8 +23,21 @@ function Register() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError('Email tidak valid. Masukkan email dengan format yang benar.');
+      return;
+    }
+
+    
     if (formData.password !== formData.confirmPassword) {
-      setError('Passwords do not match');
+      setError('Kata sandi tidak cocok.');
+      return;
+    }
+
+    if (formData.password.length < 6) {
+      setError('Kata sandi harus memiliki minimal 6 karakter.');
       return;
     }
 
@@ -34,65 +47,62 @@ function Register() {
       password: formData.password,
     };
 
+    
     localStorage.setItem('user', JSON.stringify(userData));
-    alert(`Registration successful! Welcome, ${formData.name}`);
+    alert(`Pendaftaran berhasil! Selamat datang, ${formData.name}`);
     navigate('/login');
   };
 
   return (
     <div className="register-container">
       <div className="register-box">
-        <h1>REGISTER</h1>
+        <h1>DAFTAR</h1>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label>Name:</label>
+            <label>Nama Lengkap:</label>
             <input
               type="text"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Enter your full name"
-              required
+              placeholder="Masukkan nama lengkap Anda"
             />
           </div>
           <div className="form-group">
             <label>Email:</label>
             <input
-              type="email"
+              type="text" 
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Enter your email"
-              required
+              placeholder="Masukkan email Anda"
             />
           </div>
           <div className="form-group">
-            <label>Password:</label>
+            <label>Kata Sandi:</label>
             <input
               type="password"
               name="password"
               value={formData.password}
               onChange={handleChange}
-              placeholder="Enter your password"
-              required
+              placeholder="Masukkan kata sandi Anda"
             />
           </div>
           <div className="form-group">
-            <label>Confirm Password:</label>
+            <label>Konfirmasi Kata Sandi:</label>
             <input
               type="password"
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              placeholder="Re-enter your password"
-              required
+              placeholder="Konfirmasi kata sandi Anda"
             />
           </div>
-          <button type="submit" className="register-button">Register</button>
+          <button type="submit" className="register-button">Daftar</button>
         </form>
         <div className="register-link-container">
-          <p className="register-link">Already have an account? <a href="/login">Login Here</a></p>
+          <p className="register-link">Sudah punya akun? <a href="/login">Masuk di sini</a></p>
         </div>
       </div>
     </div>
