@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react"; 
-import { useNavigate } from "react-router-dom"; 
+import React, { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import "./tryout.css";
 import Timer from "./Timer";
 import Question from "./Question";
@@ -7,17 +7,20 @@ import Question from "./Question";
 const Tryout = () => {
   const navigate = useNavigate();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const alertShown = useRef(false);  // Menggunakan useRef untuk melacak apakah alert sudah ditampilkan
 
-  
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn) {
       setIsAuthenticated(true);
     } else {
-      alert("Anda harus melakukan register terlebih dahulu!");
+      if (!alertShown.current) {  // Pastikan alert hanya muncul sekali
+        alert("Anda harus melakukan register terlebih dahulu!");
+        alertShown.current = true;  // Set alertShown ke true setelah alert muncul
+      }
       navigate("/login");
     }
-  }, [navigate]);
+  }, [navigate]);  // Menambahkan dependensi hanya pada navigate
 
   const questions = [
     { question: "1. Apa fungsi enzim katalase?", options: ["Memecah lemak", "Menguraikan hidrogen peroksida", "Mengubah amilum", "Mengangkut oksigen"], answer: "Menguraikan hidrogen peroksida" },
@@ -68,7 +71,7 @@ const Tryout = () => {
   };
 
   if (!isAuthenticated) {
-    return null; 
+    return null;
   }
 
   return (
