@@ -182,3 +182,49 @@ button:hover {
   letter-spacing: 3px; 
   margin-bottom: 20px; 
 }
+.tooltip-warning {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.tooltip-warning:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent #fff3cd transparent;
+}
+/* Styling for the link container */
+.register-link-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link-container p {
+  font-size: 14px;
+  color: #343a40;
+}
+
+/* Styling for the link */
+.register-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+  color: #0056b3; /* Darker blue for hover */
+}
+
+

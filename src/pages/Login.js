@@ -54,7 +54,7 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="subtitle-container">
-          <h1 className="subtitle">MASUK</h1>
+          <h1 className="subtitle">LOGIN</h1>
         </div>
         {error && <div className="error-message">{error}</div>}
         <form onSubmit={handleSubmit}>
