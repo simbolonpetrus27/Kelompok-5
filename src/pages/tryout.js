@@ -7,20 +7,20 @@ import Question from "./Question";
 const Tryout = () => {
   const navigate = useNavigate();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const alertShown = useRef(false);  // Menggunakan useRef untuk melacak apakah alert sudah ditampilkan
+  const alertShown = useRef(false);  
 
   useEffect(() => {
     const isLoggedIn = localStorage.getItem("isLoggedIn");
     if (isLoggedIn) {
       setIsAuthenticated(true);
     } else {
-      if (!alertShown.current) {  // Pastikan alert hanya muncul sekali
-        alert("Anda harus melakukan register terlebih dahulu!");
-        alertShown.current = true;  // Set alertShown ke true setelah alert muncul
+      if (!alertShown.current) {  
+        alert("Anda harus login terlebih dahulu!");
+        alertShown.current = true;  
       }
       navigate("/login");
     }
-  }, [navigate]);  // Menambahkan dependensi hanya pada navigate
+  }, [navigate]); 
 
   const questions = [
     { question: "1. Apa fungsi enzim katalase?", options: ["Memecah lemak", "Menguraikan hidrogen peroksida", "Mengubah amilum", "Mengangkut oksigen"], answer: "Menguraikan hidrogen peroksida" },
