@@ -10,7 +10,7 @@
 }
 
 .register-box {
-  background: url('/public/form.jpg') no-repeat center center/cover; /* Gambar sebagai latar belakang di dalam register box */
+  background: url('/public/form.jpg') no-repeat center center/cover; 
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -80,7 +80,7 @@ button:hover {
 }
 
 .register-link-container {
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  background-color: rgba(255, 255, 255, 0.5); 
   padding: 1rem;
   margin-top: 1.5rem;
   border-radius: 10px;
@@ -117,7 +117,7 @@ button:hover {
   .register-box {
     padding: 1.5rem;
     max-width: 90%;
-    animation: none; /* Menonaktifkan animasi glowing pada layar medium */
+    animation: none; 
   }
 
   h1 {
@@ -139,7 +139,7 @@ button:hover {
   }
 }
 
-/* Responsif untuk perangkat kecil (max-width: 480px) */
+
 @media (max-width: 480px) {
   .register-box {
     padding: 1rem;
@@ -204,7 +204,7 @@ button:hover {
   border-style: solid;
   border-color: transparent transparent #fff3cd transparent;
 }
-/* Styling for the link container */
+
 .register-link-container {
   margin-top: 20px;
   text-align: center;
@@ -215,7 +215,7 @@ button:hover {
   color: #343a40;
 }
 
-/* Styling for the link */
+
 .register-link a {
   color: #007bff;
   text-decoration: none;
@@ -224,7 +224,7 @@ button:hover {
 
 .register-link a:hover {
   text-decoration: underline;
-  color: #0056b3; /* Darker blue for hover */
+  color: #0056b3; 
 }
 
 
